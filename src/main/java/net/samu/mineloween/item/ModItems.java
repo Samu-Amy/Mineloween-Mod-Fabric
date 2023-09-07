@@ -13,6 +13,8 @@ import net.samu.mineloween.block.ModBlocks;
 
 public class ModItems {
 
+    public static final Item ICON = registerItem("icon", new Item(new FabricItemSettings()));
+
     public static final Item GEM = registerItem("gem", new Item(new FabricItemSettings()));
     public static final Item RAW_GEM = registerItem("raw_gem", new Item(new FabricItemSettings()));
 
@@ -23,8 +25,6 @@ public class ModItems {
     private static void itemGroupIngredients(FabricItemGroupEntries entries) {
         entries.add(GEM);
         entries.add(RAW_GEM);
-
-        entries.add(ModBlocks.GEMMED_COBBLESTONE);
     }
 
     public static void registerModItems() {
