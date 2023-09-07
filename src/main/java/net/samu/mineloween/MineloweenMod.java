@@ -2,6 +2,8 @@ package net.samu.mineloween;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.samu.mineloween.block.ModBlocks;
+import net.samu.mineloween.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class MineloweenMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
