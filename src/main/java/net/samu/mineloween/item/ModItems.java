@@ -26,7 +26,13 @@ public class ModItems {
     public static final Item GEM_AXE = registerItem("gem_axe", new AxeItem(ModToolMaterial.GEM, 9, -3f, new FabricItemSettings()));
     public static final Item GEM_SHOVEL = registerItem("gem_shovel", new ShovelItem(ModToolMaterial.GEM, 0, -3f, new FabricItemSettings()));
     public static final Item GEM_HOE = registerItem("gem_hoe", new HoeItem(ModToolMaterial.GEM, -6, 0f, new FabricItemSettings()));
-    public static final Item SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 8, -3f, new FabricItemSettings()));
+
+    public static final Item GEM_HELMET = registerItem("gem_helmet", new ArmorItem(ModArmorMaterials.GEM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item GEM_CHESTPLATE = registerItem("gem_chestplate", new ArmorItem(ModArmorMaterials.GEM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item GEM_LEGGINGS = registerItem("gem_leggings", new ArmorItem(ModArmorMaterials.GEM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item GEM_BOOTS = registerItem("gem_boots", new ArmorItem(ModArmorMaterials.GEM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 9, -3f, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

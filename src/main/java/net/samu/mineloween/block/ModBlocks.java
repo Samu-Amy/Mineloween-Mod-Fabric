@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
+import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
 
 public class ModBlocks {
 
@@ -18,6 +19,8 @@ public class ModBlocks {
     public static final Block GEMMED_COBBLESTONE_SLAB = registerBlock("gemmed_cobblestone_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
     public static final Block GEMMED_COBBLESTONE_WALL = registerBlock("gemmed_cobblestone_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL)));
     public static final Block GEMMED_COBBLESTONE_FENCE_GATE = registerBlock("gemmed_cobblestone_fence_gate", new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
+
+    public static final Block DECORATIVE_BOOKSHELF = registerBlock("decorative_bookshelf", new DecorativeBookshelfBlock(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

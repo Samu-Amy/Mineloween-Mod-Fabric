@@ -20,6 +20,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_SLAB);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_WALL);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
+                        entries.add(ModBlocks.DECORATIVE_BOOKSHELF);
 
                         entries.add(ModItems.RAW_GEM);
                         entries.add(ModItems.GEM_POWDER);
@@ -32,6 +33,12 @@ public class ModItemGroup {
                         entries.add(ModItems.GEM_AXE);
                         entries.add(ModItems.GEM_SHOVEL);
                         entries.add(ModItems.GEM_HOE);
+
+                        entries.add(ModItems.GEM_HELMET);
+                        entries.add(ModItems.GEM_CHESTPLATE);
+                        entries.add(ModItems.GEM_LEGGINGS);
+                        entries.add(ModItems.GEM_BOOTS);
+
                         entries.add(ModItems.SCYTHE);
                     }).build());
 

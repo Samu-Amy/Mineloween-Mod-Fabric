@@ -18,6 +18,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GEMMED_COBBLESTONE_WALL);
         addDrop(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
+        addDrop(ModBlocks.DECORATIVE_BOOKSHELF);
+
         addDrop(ModBlocks.GEM_ORE, oreDrops(ModBlocks.GEM_ORE, ModItems.RAW_GEM));
     }
 }

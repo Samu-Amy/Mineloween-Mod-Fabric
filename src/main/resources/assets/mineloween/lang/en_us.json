@@ -12,6 +12,12 @@
   "item.mineloween.gem_axe": "Gem Axe",
   "item.mineloween.gem_shovel": "Gem Shovel",
   "item.mineloween.gem_hoe": "Gem Hoe",
+
+  "item.mineloween.gem_helmet": "Gem Helmet",
+  "item.mineloween.gem_chestplate": "Gem Chestplate",
+  "item.mineloween.gem_leggings": "Gem Leggings",
+  "item.mineloween.gem_boots": "Gem Boots",
+
   "item.mineloween.scythe": "Scythe",
 
   "item.mineloween.gem_ore": "Gem Ore",
@@ -20,6 +26,8 @@
   "item.mineloween.gemmed_cobblestone_slab": "Gemmed Cobblestone Slab",
   "item.mineloween.gemmed_cobblestone_wall": "Gemmed Cobblestone Wall",
   "item.mineloween.gemmed_cobblestone_fence_gate": "Gemmed Cobblestone Fence Gate",
+
+  "item.mineloween.decorative_bookshelf": "Decorative Bookshelf",
 
   "itemgroup.mineloween_group": "Mineloween"
 }
