@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
@@ -25,9 +26,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerBlasting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 200, "gem");
 
         // TODO: metti questa ricetta in un blocco dedicato a macinare gli ore (grinder)
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_POWDER, 2)
-                .pattern("R")
-                .input('R', ModItems.RAW_GEM)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_POWDER, 2)
+                .input(ModItems.RAW_GEM)
                 .criterion(hasItem(ModItems.RAW_GEM), conditionsFromItem(ModItems.RAW_GEM))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEM_POWDER)));
 

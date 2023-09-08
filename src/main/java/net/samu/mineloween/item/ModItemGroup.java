@@ -17,8 +17,9 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GEMMED_COBBLESTONE);
 
                         entries.add(ModItems.RAW_GEM);
+                        entries.add(ModItems.GEM_POWDER);
+                        entries.add(ModItems.GEM_CRYSTALS);
                         entries.add(ModItems.GEM);
-                        entries.add(ModItems.ICON);
                     }).build());
 
     public static void registerItemGroups() {
