@@ -1,9 +1,12 @@
 {
   "item.mineloween.icon": "Icon",
 
-  "item.mineloween.gem": "Gem",
   "item.mineloween.raw_gem": "Raw Gem",
+  "item.mineloween.gem_powder": "Gem Powder",
+  "item.mineloween.gem": "Gem",
+  "item.mineloween.gem_crystals": "Gem Crystals",
 
+  "item.mineloween.gem_ore": "Gem Ore",
   "item.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
 
   "itemgroup.mineloween_group": "Mineloween"

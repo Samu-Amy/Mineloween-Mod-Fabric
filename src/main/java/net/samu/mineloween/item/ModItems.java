@@ -15,8 +15,10 @@ public class ModItems {
 
     public static final Item ICON = registerItem("icon", new Item(new FabricItemSettings()));
 
-    public static final Item GEM = registerItem("gem", new Item(new FabricItemSettings()));
     public static final Item RAW_GEM = registerItem("raw_gem", new Item(new FabricItemSettings()));
+    public static final Item GEM_POWDER = registerItem("gem_powder", new Item(new FabricItemSettings()));
+    public static final Item GEM = registerItem("gem", new Item(new FabricItemSettings()));
+    public static final Item GEM_CRYSTALS = registerItem("gem_crystals", new Item(new FabricItemSettings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MineloweenMod.MOD_ID, name), item);

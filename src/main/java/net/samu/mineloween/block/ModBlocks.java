@@ -13,6 +13,7 @@ import net.samu.mineloween.MineloweenMod;
 
 public class ModBlocks {
 
+    public static final Block GEM_ORE = registerBlock("gem_ore", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
     public static final Block GEMMED_COBBLESTONE = registerBlock("gemmed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
 
     private static Block registerBlock(String name, Block block) {
