@@ -1,2 +1,5 @@
-// 1.20.1	2023-09-08T09:31:36.9034697	Mineloween Mod/Tags for minecraft:block
-c82e7e5284c125c1afdcfd0789c9186dafeb6d49 data\minecraft\tags\blocks\mineable\pickaxe.json
+// 1.20.1	2023-09-08T17:34:04.8055952	Mineloween Mod/Tags for minecraft:block
+b033c12a363649fad3e85f60e02d2a392514c5ec data\minecraft\tags\blocks\walls.json
+85ad584b2f739ca5144918a39ead4089319d1646 data\minecraft\tags\blocks\mineable\pickaxe.json
+7709304d56f7e45a147cb8cda3733bd3972d9767 data\minecraft\tags\blocks\fence_gates.json
+d27d57d5ff054f41949bd77b86c6a2a4bde610eb data\minecraft\tags\blocks\needs_diamond_tool.json

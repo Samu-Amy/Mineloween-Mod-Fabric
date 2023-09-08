@@ -8,6 +8,10 @@
 
   "item.mineloween.gem_ore": "Gem Ore",
   "item.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
+  "item.mineloween.gemmed_cobblestone_stairs": "Gemmed Cobblestone Stairs",
+  "item.mineloween.gemmed_cobblestone_slab": "Gemmed Cobblestone Slab",
+  "item.mineloween.gemmed_cobblestone_wall": "Gemmed Cobblestone Wall",
+  "item.mineloween.gemmed_cobblestone_fence_gate": "Gemmed Cobblestone Fence Gate",
 
   "itemgroup.mineloween_group": "Mineloween"
 }

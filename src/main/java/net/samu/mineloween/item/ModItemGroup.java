@@ -16,6 +16,10 @@ public class ModItemGroup {
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GEM_ORE);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE);
+                        entries.add(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
+                        entries.add(ModBlocks.GEMMED_COBBLESTONE_SLAB);
+                        entries.add(ModBlocks.GEMMED_COBBLESTONE_WALL);
+                        entries.add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
                         entries.add(ModItems.RAW_GEM);
                         entries.add(ModItems.GEM_POWDER);

@@ -2,8 +2,7 @@ package net.samu.mineloween.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -15,6 +14,10 @@ public class ModBlocks {
 
     public static final Block GEM_ORE = registerBlock("gem_ore", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
     public static final Block GEMMED_COBBLESTONE = registerBlock("gemmed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
+    public static final Block GEMMED_COBBLESTONE_STAIRS = registerBlock("gemmed_cobblestone_stairs", new StairsBlock(ModBlocks.GEMMED_COBBLESTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
+    public static final Block GEMMED_COBBLESTONE_SLAB = registerBlock("gemmed_cobblestone_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
+    public static final Block GEMMED_COBBLESTONE_WALL = registerBlock("gemmed_cobblestone_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL)));
+    public static final Block GEMMED_COBBLESTONE_FENCE_GATE = registerBlock("gemmed_cobblestone_fence_gate", new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

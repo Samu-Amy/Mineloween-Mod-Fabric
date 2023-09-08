@@ -16,7 +16,11 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GEM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GEMMED_COBBLESTONE);
+        BlockStateModelGenerator.BlockTexturePool gemmedCobblestoneTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.GEMMED_COBBLESTONE);
+        gemmedCobblestoneTexturePool.stairs(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
+        gemmedCobblestoneTexturePool.slab(ModBlocks.GEMMED_COBBLESTONE_SLAB);
+        gemmedCobblestoneTexturePool.wall(ModBlocks.GEMMED_COBBLESTONE_WALL);
+        gemmedCobblestoneTexturePool.fenceGate(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
     }
 
     @Override

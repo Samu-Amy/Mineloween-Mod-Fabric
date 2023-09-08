@@ -13,6 +13,10 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.GEMMED_COBBLESTONE);
+        addDrop(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
+        addDrop(ModBlocks.GEMMED_COBBLESTONE_SLAB, slabDrops(ModBlocks.GEMMED_COBBLESTONE_SLAB));
+        addDrop(ModBlocks.GEMMED_COBBLESTONE_WALL);
+        addDrop(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
         addDrop(ModBlocks.GEM_ORE, oreDrops(ModBlocks.GEM_ORE, ModItems.RAW_GEM));
     }

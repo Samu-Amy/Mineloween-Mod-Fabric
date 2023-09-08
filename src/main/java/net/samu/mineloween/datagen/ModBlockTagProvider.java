@@ -18,8 +18,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(ModBlocks.GEMMED_COBBLESTONE); // Metti una virgola e aggiungi altri blocchi
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(
+                ModBlocks.GEMMED_COBBLESTONE,
+                ModBlocks.GEMMED_COBBLESTONE_STAIRS,
+                ModBlocks.GEMMED_COBBLESTONE_SLAB,
+                ModBlocks.GEMMED_COBBLESTONE_WALL,
+                ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE
+        );
 
-//        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.GEM_ORE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.GEM_ORE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.GEMMED_COBBLESTONE_WALL);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
     }
 }
