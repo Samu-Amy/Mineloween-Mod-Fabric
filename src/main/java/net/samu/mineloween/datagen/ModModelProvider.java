@@ -31,23 +31,18 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECORATIVE_BOOKSHELF);
     }
 
-    private void registerDecorativeBookshelfBlock(BlockStateModelGenerator blockStateModelGenerator) {
-        Identifier identifier = TexturedModel.CUBE_ALL.upload(ModBlocks.DECORATIVE_BOOKSHELF, blockStateModelGenerator.modelCollector);
-        Identifier identifier2 = blockStateModelGenerator.createSubModel(ModBlocks.DECORATIVE_BOOKSHELF, "_on", Models.CUBE_ALL, TextureMap::all);
-        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.DECORATIVE_BOOKSHELF).coordinate(BlockStateModelGenerator.createBooleanModelMap(DecorativeBookshelfBlock.VARIANT, identifier2, identifier)));
-    }
-
     public BlockStateModelGenerator.BlockTexturePool registerDecorativeBookshelfBlock(BlockStateModelGenerator blockStateModelGenerator, Block decorativeBookshelfBlock) {
         TextureMap textureMap = TextureMap.textureParticle(decorativeBookshelfBlock);
-        Identifier identifier = CustomModels.upload(decorativeBookshelfBlock, textureMap, BlockStateModelGenerator.modelCollector);
-        Identifier identifier2 = Models.CUSTOM_FENCE_SIDE_NORTH.upload(decorativeBookshelfBlock, textureMap, BlockStateModelGenerator.modelCollector);
-//        Identifier identifier3 = Models.CUSTOM_FENCE_SIDE_EAST.upload(decorativeBookshelfBlock, textureMap, BlockStateModelGenerator.this.modelCollector);
-//        Identifier identifier4 = Models.CUSTOM_FENCE_SIDE_SOUTH.upload(decorativeBookshelfBlock, textureMap, BlockStateModelGenerator.this.modelCollector);
-//        Identifier identifier5 = Models.CUSTOM_FENCE_SIDE_WEST.upload(decorativeBookshelfBlock, textureMap, BlockStateModelGenerator.this.modelCollector);
-        BlockStateModelGenerator.this.blockStateCollector.accept(BlockStateModelGenerator.createCustomFenceBlockState(decorativeBookshelfBlock, identifier, identifier2, identifier3, identifier4, identifier5));
-        Identifier identifier6 = Models.CUSTOM_FENCE_INVENTORY.upload(decorativeBookshelfBlock, textureMap, BlockStateModelGenerator.this.modelCollector);
-        BlockStateModelGenerator.this.registerParentedItemModel(decorativeBookshelfBlock, identifier6);
-        return this;
+        Identifier identifier = CustomModels.DECORATIVE_BOOKSHELF_EMPTY.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier2 = CustomModels.DECORATIVE_BOOKSHELF_VARIANT_1.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier3 = CustomModels.DECORATIVE_BOOKSHELF_VARIANT_2.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier4 = CustomModels.DECORATIVE_BOOKSHELF_VARIANT_3.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier5 = CustomModels.DECORATIVE_BOOKSHELF_VARIANT_4.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier6 = CustomModels.DECORATIVE_BOOKSHELF_VARIANT_5.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        Identifier identifier7 = CustomModels.DECORATIVE_BOOKSHELF_VARIANT_6.upload(decorativeBookshelfBlock, textureMap, blockStateModelGenerator.modelCollector);
+        blockStateModelGenerator.blockStateCollector.accept(CustomBlockStateModelGenerator.createCustomDecorativeBookshelfBlockState(decorativeBookshelfBlock, identifier, identifier2, identifier3, identifier4, identifier5, identifier6, identifier7));
+        blockStateModelGenerator.registerParentedItemModel(decorativeBookshelfBlock, identifier);
+        return null;
     }
 
     @Override
