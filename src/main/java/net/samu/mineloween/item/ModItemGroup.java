@@ -25,6 +25,14 @@ public class ModItemGroup {
                         entries.add(ModItems.GEM_POWDER);
                         entries.add(ModItems.GEM_CRYSTALS);
                         entries.add(ModItems.GEM);
+                        entries.add(ModItems.DARK_INGOT);
+
+                        entries.add(ModItems.GEM_SWORD);
+                        entries.add(ModItems.GEM_PICKAXE);
+                        entries.add(ModItems.GEM_AXE);
+                        entries.add(ModItems.GEM_SHOVEL);
+                        entries.add(ModItems.GEM_HOE);
+                        entries.add(ModItems.SCYTHE);
                     }).build());
 
     public static void registerItemGroups() {

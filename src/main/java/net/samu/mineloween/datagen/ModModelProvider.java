@@ -29,5 +29,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GEM_POWDER, Models.GENERATED);
         itemModelGenerator.register(ModItems.GEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.GEM_CRYSTALS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_INGOT, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.GEM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GEM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GEM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GEM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.GEM_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.SCYTHE, Models.HANDHELD);
     }
 }
