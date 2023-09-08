@@ -14,6 +14,7 @@ public class ModItemGroup {
     public static final ItemGroup MINELOWEEN_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(MineloweenMod.MOD_ID, "mineloween_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mineloween_group")).icon(() -> new ItemStack(ModItems.ICON))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.GEM_ORE);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE);
 
                         entries.add(ModItems.RAW_GEM);

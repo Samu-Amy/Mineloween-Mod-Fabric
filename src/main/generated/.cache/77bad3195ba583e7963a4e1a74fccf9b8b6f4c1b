@@ -1,8 +1,8 @@
-// 1.20.1	2023-09-08T09:23:53.3438601	Mineloween Mod/Model Definitions
+// 1.20.1	2023-09-08T09:31:36.9044679	Mineloween Mod/Model Definitions
 ad7bf1747f1c529a4ecc1f6a2681594d6b293624 assets\mineloween\blockstates\gemmed_cobblestone.json
 59b3edc556ac47bd99666524815fb30e40b6de5c assets\mineloween\blockstates\gem_ore.json
-4112338d08c8d2454c5caea475f5df0ea0fd9027 assets\mineloween\models\block\gem_ore.json
 f61f25b3f0d862c6a0879f35a5f7dcec44799e27 assets\mineloween\models\item\gem_ore.json
+4112338d08c8d2454c5caea475f5df0ea0fd9027 assets\mineloween\models\block\gem_ore.json
 187df77179e572351cbc70afcbfc59b10ba42a09 assets\mineloween\models\item\gemmed_cobblestone.json
 2096a3153c5f7c79731f7e4b84bf43290f61ec75 assets\mineloween\models\item\gem_powder.json
 3df7d251a67c5ef0d8e7558c4395eeda170b8a3c assets\mineloween\models\item\raw_gem.json

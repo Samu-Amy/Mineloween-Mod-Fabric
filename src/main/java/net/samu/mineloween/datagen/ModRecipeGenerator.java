@@ -23,7 +23,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         offerSmelting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 200, "gem");
-        offerBlasting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 200, "gem");
+        offerBlasting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 100, "gem");
 
         // TODO: metti questa ricetta in un blocco dedicato a macinare gli ore (grinder)
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_POWDER, 2)
@@ -51,7 +51,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEM)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GEMMED_COBBLESTONE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GEMMED_COBBLESTONE, 8)
                 .pattern("CCC")
                 .pattern("CGC")
                 .pattern("CCC")
