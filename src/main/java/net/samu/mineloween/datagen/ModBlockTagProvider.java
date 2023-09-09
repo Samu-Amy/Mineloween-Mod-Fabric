@@ -26,7 +26,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.GEMMED_COBBLESTONE_STAIRS,
                 ModBlocks.GEMMED_COBBLESTONE_SLAB,
                 ModBlocks.GEMMED_COBBLESTONE_WALL,
-                ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE
+                ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE,
+                ModBlocks.GEMSTONE_GRINDER
         );
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.GEM_ORE);

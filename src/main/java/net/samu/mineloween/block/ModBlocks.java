@@ -11,6 +11,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
 import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
+import net.samu.mineloween.block.custom.GemstoneGrinderBlock;
 import net.samu.mineloween.block.custom.MalvaCropBlock;
 
 public class ModBlocks {
@@ -23,7 +24,9 @@ public class ModBlocks {
     public static final Block GEMMED_COBBLESTONE_WALL = registerBlock("gemmed_cobblestone_wall", new WallBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE_WALL)));
     public static final Block GEMMED_COBBLESTONE_FENCE_GATE = registerBlock("gemmed_cobblestone_fence_gate", new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
 
+    public static final Block GEMSTONE_GRINDER = registerBlock("gemstone_grinder", new GemstoneGrinderBlock(FabricBlockSettings.copyOf(Blocks.STONE).nonOpaque()));
     public static final Block DECORATIVE_BOOKSHELF = registerBlock("decorative_bookshelf", new DecorativeBookshelfBlock(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
+
 
 
     // -------- Crop --------

@@ -20,6 +20,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_SLAB);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_WALL);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
+
+                        entries.add(ModBlocks.GEMSTONE_GRINDER);
                         entries.add(ModBlocks.DECORATIVE_BOOKSHELF);
 
                         entries.add(ModItems.RAW_GEM);

@@ -9,7 +9,6 @@ import net.minecraft.item.ArmorItem;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.block.ModBlocks;
-import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
 import net.samu.mineloween.block.custom.MalvaCropBlock;
 import net.samu.mineloween.item.ModItems;
 
@@ -29,6 +28,7 @@ public class ModModelProvider extends FabricModelProvider {
         gemmedCobblestoneTexturePool.wall(ModBlocks.GEMMED_COBBLESTONE_WALL);
         gemmedCobblestoneTexturePool.fenceGate(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.GEMSTONE_GRINDER);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECORATIVE_BOOKSHELF);
 
         blockStateModelGenerator.registerCrop(ModBlocks.MALVA_CROP, MalvaCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
