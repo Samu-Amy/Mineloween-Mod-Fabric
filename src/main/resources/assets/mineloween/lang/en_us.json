@@ -19,9 +19,14 @@
   "item.mineloween.gem_boots": "Gem Boots",
 
   "item.mineloween.scythe": "Scythe",
+  "item.mineloween.dark_scythe": "Dark Scythe",
 
+  "item.mineloween.chocolate": "Chocolate",
+
+  "item.mineloween.leaf": "Leaf",
   "item.mineloween.malva_seeds": "Malva Seeds",
   "item.mineloween.malva_flowers": "Malva Flowers",
+  "block.mineloween.lavanda": "Lavandula",
 
   "block.mineloween.gem_ore": "Gem Ore",
   "block.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",

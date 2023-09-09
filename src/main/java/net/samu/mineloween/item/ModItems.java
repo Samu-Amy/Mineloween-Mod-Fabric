@@ -40,10 +40,16 @@ public class ModItems {
 
 
     // -------- Weapons --------
-    public static final Item SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 9, -3f, new FabricItemSettings()));
+    public static final Item SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 9, -3f, new FabricItemSettings(), false));
+    public static final Item DARK_SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 11, -2.8f, new FabricItemSettings(), true));
+
+
+    // -------- Food --------
+    public static final Item CHOCOLATE = registerItem("chocolate", new Item(new FabricItemSettings().food(ModFoodComponents.CHOCOLATE)));
 
 
     // -------- Nature --------
+    public static final Item LEAF = registerItem("leaf", new Item(new FabricItemSettings()));
     public static final Item MALVA_SEEDS = registerItem("malva_seeds", new AliasedBlockItem(ModBlocks.MALVA_CROP, new FabricItemSettings()));
     public static final Item MALVA_FLOWERS = registerItem("malva_flowers", new Item(new FabricItemSettings()));
 

@@ -6,10 +6,13 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.state.property.BooleanProperty;
 
 public class ModScytheItem extends SwordItem {
-    public ModScytheItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    private static boolean is_dark;
+    public ModScytheItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings, boolean is_dark) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
+        this.is_dark = is_dark;
     }
 
     // La falce normale permette di rigenerarsi tramite i danni fatti ai nemici dall'effetto veleno, la falce dark rigenera anche in base ai danni fatti sul colpo
@@ -17,6 +20,9 @@ public class ModScytheItem extends SwordItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 0), attacker);
         attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 1));
+        if (is_dark) {
+            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 0));
+        }
         return super.postHit(stack, target, attacker);
     }
 }

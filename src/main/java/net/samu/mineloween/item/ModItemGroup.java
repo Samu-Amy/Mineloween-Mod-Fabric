@@ -40,9 +40,14 @@ public class ModItemGroup {
                         entries.add(ModItems.GEM_BOOTS);
 
                         entries.add(ModItems.SCYTHE);
+                        entries.add(ModItems.DARK_SCYTHE);
 
+                        entries.add(ModItems.CHOCOLATE);
+
+                        entries.add(ModItems.LEAF);
                         entries.add(ModItems.MALVA_SEEDS);
                         entries.add(ModItems.MALVA_FLOWERS);
+                        entries.add(ModBlocks.LAVANDA);
                     }).build());
 
     public static void registerItemGroups() {

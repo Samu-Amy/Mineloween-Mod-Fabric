@@ -32,6 +32,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECORATIVE_BOOKSHELF);
 
         blockStateModelGenerator.registerCrop(ModBlocks.MALVA_CROP, MalvaCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAVANDA, ModBlocks.POTTED_LAVANDA, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     public BlockStateModelGenerator.BlockTexturePool registerDecorativeBookshelfBlock(BlockStateModelGenerator blockStateModelGenerator, Block decorativeBookshelfBlock) {
@@ -68,7 +70,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GEM_BOOTS));
 
         itemModelGenerator.register(ModItems.SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARK_SCYTHE, Models.HANDHELD);
 
+        itemModelGenerator.register(ModItems.CHOCOLATE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.LEAF, Models.GENERATED);
         itemModelGenerator.register(ModItems.MALVA_FLOWERS, Models.GENERATED);
     }
 }
