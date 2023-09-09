@@ -41,7 +41,7 @@ public class ModItems {
 
     // -------- Weapons --------
     public static final Item SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 9, -3f, new FabricItemSettings(), false));
-    public static final Item DARK_SCYTHE = registerItem("scythe", new ModScytheItem(ModToolMaterial.DARK, 11, -2.8f, new FabricItemSettings(), true));
+    public static final Item DARK_SCYTHE = registerItem("dark_scythe", new ModScytheItem(ModToolMaterial.DARK, 11, -2.8f, new FabricItemSettings(), true));
 
 
     // -------- Food --------
