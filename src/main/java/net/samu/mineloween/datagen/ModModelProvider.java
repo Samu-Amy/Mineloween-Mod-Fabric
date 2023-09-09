@@ -10,6 +10,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
+import net.samu.mineloween.block.custom.MalvaCropBlock;
 import net.samu.mineloween.item.ModItems;
 
 import java.util.Optional;
@@ -29,6 +30,8 @@ public class ModModelProvider extends FabricModelProvider {
         gemmedCobblestoneTexturePool.fenceGate(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECORATIVE_BOOKSHELF);
+
+        blockStateModelGenerator.registerCrop(ModBlocks.MALVA_CROP, MalvaCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
     public BlockStateModelGenerator.BlockTexturePool registerDecorativeBookshelfBlock(BlockStateModelGenerator blockStateModelGenerator, Block decorativeBookshelfBlock) {
@@ -65,6 +68,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.GEM_BOOTS));
 
         itemModelGenerator.register(ModItems.SCYTHE, Models.HANDHELD);
+
+        itemModelGenerator.register(ModItems.MALVA_FLOWERS, Models.GENERATED);
     }
 }
 

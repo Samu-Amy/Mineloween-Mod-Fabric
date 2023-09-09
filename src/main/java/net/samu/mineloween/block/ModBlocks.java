@@ -10,9 +10,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
 import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
+import net.samu.mineloween.block.custom.MalvaCropBlock;
 
 public class ModBlocks {
 
+    // -------- Blocchi --------
     public static final Block GEM_ORE = registerBlock("gem_ore", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
     public static final Block GEMMED_COBBLESTONE = registerBlock("gemmed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
     public static final Block GEMMED_COBBLESTONE_STAIRS = registerBlock("gemmed_cobblestone_stairs", new StairsBlock(ModBlocks.GEMMED_COBBLESTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
@@ -22,8 +24,17 @@ public class ModBlocks {
 
     public static final Block DECORATIVE_BOOKSHELF = registerBlock("decorative_bookshelf", new DecorativeBookshelfBlock(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
 
+
+    // -------- Crop --------
+    public static final Block MALVA_CROP = registerBlockWithoutBlockItem("malva_block", new MalvaCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, new Identifier(MineloweenMod.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, new Identifier(MineloweenMod.MOD_ID, name), block);
     }
 

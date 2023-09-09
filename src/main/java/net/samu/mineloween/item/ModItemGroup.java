@@ -40,6 +40,9 @@ public class ModItemGroup {
                         entries.add(ModItems.GEM_BOOTS);
 
                         entries.add(ModItems.SCYTHE);
+
+                        entries.add(ModItems.MALVA_SEEDS);
+                        entries.add(ModItems.MALVA_FLOWERS);
                     }).build());
 
     public static void registerItemGroups() {

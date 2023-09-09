@@ -8,6 +8,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
 
+import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;

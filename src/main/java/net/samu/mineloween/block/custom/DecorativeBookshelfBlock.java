@@ -24,6 +24,7 @@ public class DecorativeBookshelfBlock extends Block {
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if(!world.isClient() && hand == Hand.MAIN_HAND) {
             world.setBlockState(pos, state.cycle(VARIANT));
+            System.out.println(state.get(VARIANT));
         }
 
         return ActionResult.SUCCESS;

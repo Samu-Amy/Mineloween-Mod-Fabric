@@ -20,14 +20,17 @@
 
   "item.mineloween.scythe": "Scythe",
 
-  "item.mineloween.gem_ore": "Gem Ore",
-  "item.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
-  "item.mineloween.gemmed_cobblestone_stairs": "Gemmed Cobblestone Stairs",
-  "item.mineloween.gemmed_cobblestone_slab": "Gemmed Cobblestone Slab",
-  "item.mineloween.gemmed_cobblestone_wall": "Gemmed Cobblestone Wall",
-  "item.mineloween.gemmed_cobblestone_fence_gate": "Gemmed Cobblestone Fence Gate",
+  "item.mineloween.malva_seeds": "Malva Seeds",
+  "item.mineloween.malva_flowers": "Malva Flowers",
 
-  "item.mineloween.decorative_bookshelf": "Decorative Bookshelf",
+  "block.mineloween.gem_ore": "Gem Ore",
+  "block.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
+  "block.mineloween.gemmed_cobblestone_stairs": "Gemmed Cobblestone Stairs",
+  "block.mineloween.gemmed_cobblestone_slab": "Gemmed Cobblestone Slab",
+  "block.mineloween.gemmed_cobblestone_wall": "Gemmed Cobblestone Wall",
+  "block.mineloween.gemmed_cobblestone_fence_gate": "Gemmed Cobblestone Fence Gate",
+
+  "block.mineloween.decorative_bookshelf": "Decorative Bookshelf",
 
   "itemgroup.mineloween_group": "Mineloween"
 }
