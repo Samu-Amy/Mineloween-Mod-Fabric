@@ -18,10 +18,13 @@ public class ModScytheItem extends SwordItem {
     // La falce normale permette di rigenerarsi tramite i danni fatti ai nemici dall'effetto veleno, la falce dark rigenera anche in base ai danni fatti sul colpo
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 0), attacker);
-        attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 1));
         if (is_dark) {
             attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 1, 0));
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 80, 2), attacker);
+            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 80, 3));
+        } else {
+            target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 100, 0), attacker);
+            attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100, 1));
         }
         return super.postHit(stack, target, attacker);
     }

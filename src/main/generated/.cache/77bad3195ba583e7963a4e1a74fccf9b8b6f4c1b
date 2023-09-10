@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-10T13:48:50.8851576	Mineloween Mod/Model Definitions
+// 1.20.1	2023-09-10T18:33:19.9923386	Mineloween Mod/Model Definitions
 9e597c227919ebb132d9286dd4809bb780ed9033 assets\mineloween\models\item\gem_leggings_lapis_trim.json
 37e4d58a41295ffbe93fecb09a3adfa077b99133 assets\mineloween\models\item\gem_chestplate_redstone_trim.json
 ad7bf1747f1c529a4ecc1f6a2681594d6b293624 assets\mineloween\blockstates\gemmed_cobblestone.json
@@ -70,8 +70,8 @@ a06d5c5da173b8649217af0e77b05d5a93fa1905 assets\mineloween\models\item\gem_leggi
 8cfd9a3b5f356cc5670ecaed9577003d1ff21ca4 assets\mineloween\models\item\gem_helmet_emerald_trim.json
 b8059436f24866fff1fc5ba7ead599426a769286 assets\mineloween\models\block\gemmed_cobblestone.json
 296f7b6de20ce00386abc39b314f7102257e7469 assets\mineloween\models\item\gem_helmet_quartz_trim.json
-6ec53a284f110ac0306ed9e0f3698de6c6a60e98 assets\mineloween\models\item\gem_chestplate_quartz_trim.json
 236449db23d62ee1419468c8d2c01424bd039bf4 assets\mineloween\models\item\decorative_bookshelf.json
+6ec53a284f110ac0306ed9e0f3698de6c6a60e98 assets\mineloween\models\item\gem_chestplate_quartz_trim.json
 cf862f507efa7651e995fb1546967ea39ae98fdc assets\mineloween\models\item\gem_leggings.json
 1c3195cb972ecfce883ea6b8188eed812cf7b6ba assets\mineloween\models\item\gemmed_cobblestone_wall.json
 95d19e53fcc06cf9ae709bcba816fdd4612e3d23 assets\mineloween\models\item\gem_leggings_gold_trim.json

@@ -22,6 +22,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(
+                ModBlocks.GEM_ORE,
                 ModBlocks.GEMMED_COBBLESTONE,
                 ModBlocks.GEMMED_COBBLESTONE_STAIRS,
                 ModBlocks.GEMMED_COBBLESTONE_SLAB,
