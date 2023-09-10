@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-10T13:28:25.220211	Mineloween Mod/Recipes
+// 1.20.1	2023-09-10T13:48:50.8796659	Mineloween Mod/Recipes
 ce74a23733af49478908cac0032867dc9583706d data\mineloween\advancements\recipes\misc\raw_gem_from_smelting_gem_ore.json
 b779383b9a73e20d6f4ec107ae6f3380fceda33b data\mineloween\recipes\gem.json
 a06dda6d81bfbf972ae9a5fd704503c0f97affda data\mineloween\advancements\recipes\misc\gem_axe.json
@@ -17,8 +17,8 @@ da26113e1c8c085211718e93febcb61e9df67a1b data\mineloween\recipes\gem_boots.json
 b3bc82654ca1e8cd01557261b4fa0d06993002de data\mineloween\advancements\recipes\misc\gem.json
 31ab062f818d236f940bcdeb07328c51b7d3274e data\mineloween\advancements\recipes\misc\gem_chestplate.json
 ac01e5003149aa3e7f41cf373efe629edd24c26b data\mineloween\recipes\gem_chestplate.json
-71ff2bc303f8cc25f6773c25d1c7947a7afab892 data\mineloween\advancements\recipes\misc\gem_powder.json
 72ab742e20c294858f5acdc971b7535bc8cc1d01 data\mineloween\advancements\recipes\misc\gem_sword.json
+71ff2bc303f8cc25f6773c25d1c7947a7afab892 data\mineloween\advancements\recipes\misc\gem_powder.json
 7c6cbb769e18c8a0a9414c41d9b59f5321d3ac3d data\mineloween\advancements\recipes\misc\raw_gem_from_blasting_gem_ore.json
 cf9b6464dc7665efedb0486fbd562a5772fb1324 data\mineloween\recipes\gemmed_cobblestone_stairs.json
 4f44348dba38c93a77b0652198b85b749b31102b data\mineloween\recipes\gemmed_cobblestone_slab.json
