@@ -10,12 +10,12 @@
     }
   },
   "pattern": [
-    "CCC",
+    " C ",
     "CGC",
-    "CCC"
+    " C "
   ],
   "result": {
-    "count": 8,
+    "count": 4,
     "item": "mineloween:gemmed_cobblestone"
   },
   "show_notification": true
