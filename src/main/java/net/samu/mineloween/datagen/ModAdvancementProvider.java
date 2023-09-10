@@ -24,7 +24,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
         super(output);
     }
 
-    // TODO: sposta la gemma dopo le bacchette di base
+    // TODO: sposta la gemma dopo le bacchette di base (come gerarchia) e fai advancements con più criteri (es. aver scoperto tutte le lavorazioni delle gemme, come raw, powder, ecc.)
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
 

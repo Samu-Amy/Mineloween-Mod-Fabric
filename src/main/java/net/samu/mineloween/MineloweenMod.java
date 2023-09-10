@@ -6,6 +6,7 @@ import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.item.ModItemGroup;
 import net.samu.mineloween.item.ModItems;
 import net.samu.mineloween.util.ModRegistries;
+import net.samu.mineloween.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,5 +21,7 @@ public class MineloweenMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModRegistries.registerModStuff();
+
+		ModVillagers.registerVillagers();
 	}
 }

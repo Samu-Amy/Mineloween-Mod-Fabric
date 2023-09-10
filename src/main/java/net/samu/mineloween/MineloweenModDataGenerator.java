@@ -15,5 +15,6 @@ public class MineloweenModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModAdvancementProvider::new);
+		pack.addProvider(ModPOITagProvider::new);
 	}
 }

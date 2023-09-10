@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-10T09:50:54.0986982	Mineloween Mod/Recipes
+// 1.20.1	2023-09-10T13:28:25.220211	Mineloween Mod/Recipes
 ce74a23733af49478908cac0032867dc9583706d data\mineloween\advancements\recipes\misc\raw_gem_from_smelting_gem_ore.json
 b779383b9a73e20d6f4ec107ae6f3380fceda33b data\mineloween\recipes\gem.json
 a06dda6d81bfbf972ae9a5fd704503c0f97affda data\mineloween\advancements\recipes\misc\gem_axe.json
@@ -17,8 +17,8 @@ da26113e1c8c085211718e93febcb61e9df67a1b data\mineloween\recipes\gem_boots.json
 b3bc82654ca1e8cd01557261b4fa0d06993002de data\mineloween\advancements\recipes\misc\gem.json
 31ab062f818d236f940bcdeb07328c51b7d3274e data\mineloween\advancements\recipes\misc\gem_chestplate.json
 ac01e5003149aa3e7f41cf373efe629edd24c26b data\mineloween\recipes\gem_chestplate.json
-72ab742e20c294858f5acdc971b7535bc8cc1d01 data\mineloween\advancements\recipes\misc\gem_sword.json
 71ff2bc303f8cc25f6773c25d1c7947a7afab892 data\mineloween\advancements\recipes\misc\gem_powder.json
+72ab742e20c294858f5acdc971b7535bc8cc1d01 data\mineloween\advancements\recipes\misc\gem_sword.json
 7c6cbb769e18c8a0a9414c41d9b59f5321d3ac3d data\mineloween\advancements\recipes\misc\raw_gem_from_blasting_gem_ore.json
 cf9b6464dc7665efedb0486fbd562a5772fb1324 data\mineloween\recipes\gemmed_cobblestone_stairs.json
 4f44348dba38c93a77b0652198b85b749b31102b data\mineloween\recipes\gemmed_cobblestone_slab.json
@@ -28,10 +28,10 @@ dbc52d40ab81f7f38f70a37f087f615de040f1a6 data\mineloween\recipes\raw_gem_from_bl
 c88050cd79f844a29660aca0e5830383b3966369 data\mineloween\recipes\gem_leggings.json
 389c989de37d1ab425bd50c2f56a625791931645 data\mineloween\advancements\recipes\misc\gem_pickaxe.json
 78fffbb2046fd84247cab38d5ff8cb5b43cfbfa5 data\mineloween\recipes\gem_hoe.json
-b486ccff605a0c0e233ff9591de3c1368a0da509 data\mineloween\advancements\recipes\misc\gem_helmet.json
 e7f1cf1310865a4ee89c8d951d5234871ce20d47 data\mineloween\recipes\gem_helmet.json
+b486ccff605a0c0e233ff9591de3c1368a0da509 data\mineloween\advancements\recipes\misc\gem_helmet.json
 50026372b9a79f8742ca32fb354fbfb55fefadb6 data\mineloween\recipes\gem_crystals.json
 6f6a41f373041dbfb9fb3ef502cfa3cb78f916a9 data\mineloween\recipes\gem_sword.json
-4aaf971b8025eb143980ae2d11ffec7db94fba19 data\mineloween\advancements\recipes\misc\gem_leggings.json
 5ff681f2f0e7575fa7a17bf918a7b18054f8bb47 data\mineloween\advancements\recipes\misc\gem_shovel.json
+4aaf971b8025eb143980ae2d11ffec7db94fba19 data\mineloween\advancements\recipes\misc\gem_leggings.json
 f0b103886ea9dc4861b3410911d367bd1c992fc2 data\mineloween\advancements\recipes\misc\gem_crystals.json

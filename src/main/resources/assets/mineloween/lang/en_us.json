@@ -38,5 +38,7 @@
   "block.mineloween.gemstone_grinder": "Gemstone Grinder",
   "block.mineloween.decorative_bookshelf": "Decorative Bookshelf",
 
+  "entity.minecraft.villager.herborist": "Herborist",
+
   "itemgroup.mineloween_group": "Mineloween"
 }
