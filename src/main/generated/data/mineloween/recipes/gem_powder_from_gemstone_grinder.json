@@ -1,0 +1,12 @@
+{
+  "type": "mineloween:gemstone_grinder",
+  "ingredients": [
+    {
+      "item": "mineloween:raw_gem"
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "mineloween:gem_powder"
+  }
+}
