@@ -25,20 +25,26 @@ public class ModRegistries {
     }
 
     private static void registerModCompostables() {
-        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.MALVA_FLOWERS, 0.65f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.MALVA_SEEDS, 0.3f);
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.MALVA_FLOWERS, 0.65f);
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.LAVANDA, 0.65f);
     }
 
     private static void registerCustomTrades() {
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModItems.MALVA_SEEDS, 2), 6, 4, 0.04f));
+                    new ItemStack(ModBlocks.LAVANDA, 3), 10, 4, 0.02f));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 3, 0.02f));
+        });
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 2),
-                    new ItemStack(ModBlocks.LAVANDA, 6), 4, 4, 0.02f));
+                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 6, 0.04f));
         });
     }
 }

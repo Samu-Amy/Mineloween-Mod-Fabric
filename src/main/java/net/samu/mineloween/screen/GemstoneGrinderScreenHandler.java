@@ -24,7 +24,7 @@ public class GemstoneGrinderScreenHandler extends ScreenHandler {
                 new ArrayPropertyDelegate(2));
     }
 
-    public GemstoneGrinderScreenHandler(int syncId, PlayerInventory inventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
+    public GemstoneGrinderScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(ModScreenHandlers.GEMSTONE_GRINDER_SCREEN_HANDLER, syncId);
         checkSize(((Inventory) blockEntity), 2);
         this.inventory = (Inventory) blockEntity;
@@ -34,8 +34,8 @@ public class GemstoneGrinderScreenHandler extends ScreenHandler {
         this.addSlot(new Slot(inventory, 0, 44, 35));
         this.addSlot(new Slot(inventory, 1, 116, 35));
 
-        addPlayerInventory(inventory);
-        addPlayerHotbar(inventory);
+        addPlayerInventory(playerInventory);
+        addPlayerHotbar(playerInventory);
 
         addProperties(arrayPropertyDelegate);
     }
@@ -72,7 +72,7 @@ public class GemstoneGrinderScreenHandler extends ScreenHandler {
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);  // Max Progress
-        int progressArrowSize = 26; // This is the width in pixels of your arrow
+        int progressArrowSize = 22; // This is the width in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

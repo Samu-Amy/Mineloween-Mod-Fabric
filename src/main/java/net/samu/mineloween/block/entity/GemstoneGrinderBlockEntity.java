@@ -125,7 +125,7 @@ public class GemstoneGrinderBlockEntity extends BlockEntity implements ExtendedS
 
     private void craftItem() {
         this.removeStack(INPUT_SLOT, 1);
-        this.setStack(OUTPUT_SLOT, new ItemStack(this.getStack(OUTPUT_SLOT).getItem(), this.getStack(OUTPUT_SLOT).getCount() + 2));
+        this.setStack(OUTPUT_SLOT, new ItemStack(ModItems.GEM_POWDER, this.getStack(OUTPUT_SLOT).getCount() + 2));
     }
 
     private void resetProgress() {

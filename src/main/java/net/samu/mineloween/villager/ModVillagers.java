@@ -18,14 +18,14 @@ import net.samu.mineloween.block.ModBlocks;
 // TODO: i clerici vendono cose legate alla magia, fare dei clerici di livello più alto o direttamente dei maghi e/o streghe
 public class ModVillagers {
     public static final RegistryKey<PointOfInterestType> HERBORISM_POI_KEY = registerPoiKey("herborismpoi");
-    public static final PointOfInterestType HERBORISM_POI = registerPoi("herborismpoi", ModBlocks.GEMSTONE_GRINDER); //TODO: cambia in mortaio e pestello (o altro legato all'erboristeria)
+    public static final PointOfInterestType HERBORISM_POI = registerPoi("herborismpoi", ModBlocks.MALVA_CROP); //TODO: cambia in mortaio e pestello (o altro legato all'erboristeria)
     public static final VillagerProfession HERBORIST = registerProfession("herborist", HERBORISM_POI_KEY);
 
 
     private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
         return Registry.register(Registries.VILLAGER_PROFESSION, new Identifier(MineloweenMod.MOD_ID, name),
                 new VillagerProfession(name, entry -> true, entry -> entry.matchesKey(type),
-                        ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_FARMER));
+                        ImmutableSet.of(), ImmutableSet.of(), SoundEvents.ENTITY_VILLAGER_WORK_MASON));
     }
 
     private static PointOfInterestType registerPoi(String name, Block block) {
