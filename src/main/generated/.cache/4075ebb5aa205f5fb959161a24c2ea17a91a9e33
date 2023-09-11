@@ -1,5 +1,6 @@
-// 1.20.1	2023-09-11T18:41:37.4811948	Mineloween Mod/Recipes
+// 1.20.1	2023-09-11T20:03:06.1680427	Mineloween Mod/Recipes
 ce74a23733af49478908cac0032867dc9583706d data\mineloween\advancements\recipes\misc\raw_gem_from_smelting_gem_ore.json
+6cb75451699874a077d8c5c5a21f29543473a7ed data\mineloween\recipes\gem_powder_from_gemstone_grinder.json
 b779383b9a73e20d6f4ec107ae6f3380fceda33b data\mineloween\recipes\gem.json
 a06dda6d81bfbf972ae9a5fd704503c0f97affda data\mineloween\advancements\recipes\misc\gem_axe.json
 22c5d045ba02912829cd28316a8915fc77ad0a58 data\mineloween\advancements\recipes\misc\gem_hoe.json
@@ -11,14 +12,13 @@ a7172b023de7b22fc9f13bd63ab611325161d556 data\mineloween\advancements\recipes\mi
 ca580787368b1ade5103bcb4027076a28f1cf4a0 data\mineloween\advancements\recipes\misc\gemmed_cobblestone_slab.json
 f3bfe35aa2ecdbf23db2fa3db1c263d2df6ac787 data\mineloween\recipes\raw_gem_from_smelting_gem_ore.json
 f505c58b95a9a1fa92b543b740fddfae9d6113de data\mineloween\recipes\gem_axe.json
-f9b8ee5f7749a34700fc822bcf74045943932299 data\mineloween\recipes\gem_powder.json
+27a7b086066bc16e9b437492827e2f797ebb716b data\mineloween\advancements\recipes\gem_powder.json
 12b608e549ab84fb36714d4637c744f7c3fef08d data\mineloween\advancements\recipes\misc\gemmed_cobblestone_wall.json
 da26113e1c8c085211718e93febcb61e9df67a1b data\mineloween\recipes\gem_boots.json
 b3bc82654ca1e8cd01557261b4fa0d06993002de data\mineloween\advancements\recipes\misc\gem.json
 31ab062f818d236f940bcdeb07328c51b7d3274e data\mineloween\advancements\recipes\misc\gem_chestplate.json
 ac01e5003149aa3e7f41cf373efe629edd24c26b data\mineloween\recipes\gem_chestplate.json
 72ab742e20c294858f5acdc971b7535bc8cc1d01 data\mineloween\advancements\recipes\misc\gem_sword.json
-71ff2bc303f8cc25f6773c25d1c7947a7afab892 data\mineloween\advancements\recipes\misc\gem_powder.json
 7c6cbb769e18c8a0a9414c41d9b59f5321d3ac3d data\mineloween\advancements\recipes\misc\raw_gem_from_blasting_gem_ore.json
 cf9b6464dc7665efedb0486fbd562a5772fb1324 data\mineloween\recipes\gemmed_cobblestone_stairs.json
 4f44348dba38c93a77b0652198b85b749b31102b data\mineloween\recipes\gemmed_cobblestone_slab.json

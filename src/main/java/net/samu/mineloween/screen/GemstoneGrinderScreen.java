@@ -19,6 +19,7 @@ public class GemstoneGrinderScreen extends HandledScreen<GemstoneGrinderScreenHa
     @Override
     protected void init() {
         super.init();
+        titleX = 43;
     }
 
     @Override
