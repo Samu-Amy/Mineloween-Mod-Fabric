@@ -1,7 +1,10 @@
 package net.samu.mineloween.block.custom;
 
+import com.mojang.datafixers.types.templates.Check;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.entity.BlockEntityTicker;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.screen.NamedScreenHandlerFactory;
@@ -17,6 +20,7 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.samu.mineloween.block.entity.GemstoneGrinderBlockEntity;
+import net.samu.mineloween.block.entity.ModBlockEntities;
 import org.jetbrains.annotations.Nullable;
 
 public class GemstoneGrinderBlock extends BlockWithEntity implements BlockEntityProvider {
@@ -75,5 +79,11 @@ public class GemstoneGrinderBlock extends BlockWithEntity implements BlockEntity
             }
         }
         return ActionResult.SUCCESS;
+    }
+
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
+        return checkType(type, ModBlockEntities.GEMSTONE_GRINDER_BE, (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }
