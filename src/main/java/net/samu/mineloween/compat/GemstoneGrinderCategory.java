@@ -44,11 +44,11 @@ public class GemstoneGrinderCategory implements DisplayCategory<BasicDisplay> {
         widgets.add(Widgets.createSlot(new Point(startPoint.x + 44, startPoint.y + 35)).entries(display.getInputEntries().get(0)));
         widgets.add(Widgets.createSlot(new Point(startPoint.x + 116, startPoint.y + 35)).markOutput().entries(display.getOutputEntries().get(0)));
 
-        return DisplayCategory.super.setupDisplay(display, bounds);
+        return widgets;
     }
 
     @Override
     public int getDisplayHeight() {
-        return 90;
+        return 170;
     }
 }

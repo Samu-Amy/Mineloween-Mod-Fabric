@@ -5,16 +5,11 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementDisplay;
 import net.minecraft.advancement.AdvancementFrame;
-import net.minecraft.advancement.CriterionMerger;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
-import net.minecraft.advancement.criterion.UsingItemCriterion;
 import net.minecraft.item.ItemStack;
-import net.minecraft.predicate.entity.EntityPredicate;
-import net.minecraft.predicate.item.ItemPredicate;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
-import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.item.ModItems;
 
 import java.util.function.Consumer;
@@ -25,6 +20,7 @@ public class ModAdvancementProvider extends FabricAdvancementProvider {
     }
 
     // TODO: sposta la gemma dopo le bacchette di base (come gerarchia) e fai advancements con più criteri (es. aver scoperto tutte le lavorazioni delle gemme, come raw, powder, ecc.)
+
     @Override
     public void generateAdvancement(Consumer<Advancement> consumer) {
 
