@@ -23,9 +23,6 @@
 		],
 		"client": [
 			"net.samu.mineloween.MineloweenModClient"
-		],
-		"rei_client": [
-			"net.samu.mineloween.compat.MineloweenModREIClientPlugin"
 		]
 	},
 	"mixins": [
