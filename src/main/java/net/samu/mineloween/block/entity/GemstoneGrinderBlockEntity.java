@@ -7,7 +7,6 @@ import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
-import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
@@ -19,11 +18,8 @@ import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.samu.mineloween.item.ModItems;
-import net.samu.mineloween.recipe.GemstoneGrinderRecipe;
 import net.samu.mineloween.screen.GemstoneGrinderScreenHandler;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.Optional;
 
 public class GemstoneGrinderBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory{
     private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
@@ -116,31 +112,7 @@ public class GemstoneGrinderBlockEntity extends BlockEntity implements ExtendedS
     }
 
     private boolean hasRecipe() {
-        Optional<GemstoneGrinderRecipe> recipe = getCurrentRecipe();
-
-        if (recipe.isEmpty()) return false;
-
-        ItemStack output = recipe.get().getOutput(null);
-
-        return canInsertAmountIntoOutputSlot(output.getCount())
-                && canInsertItemIntoOutputSlot(output);
-    }
-
-    private boolean canInsertItemIntoOutputSlot(ItemStack output) {
-        return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getItem() == output.getItem();
-    }
-
-    private boolean canInsertAmountIntoOutputSlot(int count) {
-        return this.getStack(OUTPUT_SLOT).getMaxCount() >= this.getStack(OUTPUT_SLOT).getCount() + count;
-    }
-
-    private Optional<GemstoneGrinderRecipe> getCurrentRecipe() {
-        SimpleInventory inventory = new SimpleInventory(this.size());
-        for (int i = 0; i < this.size(); i++) {
-            inventory.setStack(i, this.getStack(i));
-        }
-
-        return this.getWorld().getRecipeManager().getFirstMatch(GemstoneGrinderRecipe.Type.INSTANCE, inventory, this.getWorld());
+        return this.getStack(INPUT_SLOT).getItem() == ModItems.RAW_GEM;
     }
 
     private void increaseCraftingProgress() {
@@ -152,11 +124,8 @@ public class GemstoneGrinderBlockEntity extends BlockEntity implements ExtendedS
     }
 
     private void craftItem() {
-        Optional<GemstoneGrinderRecipe> recipe = getCurrentRecipe();
-
         this.removeStack(INPUT_SLOT, 1);
-        this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().getOutput(null).getItem(),
-                this.getStack(OUTPUT_SLOT).getCount() + recipe.get().getOutput(null).getCount()));
+        this.setStack(OUTPUT_SLOT, new ItemStack(ModItems.GEM_POWDER, this.getStack(OUTPUT_SLOT).getCount() + 2));
     }
 
     private void resetProgress() {

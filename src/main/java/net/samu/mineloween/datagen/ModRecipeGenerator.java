@@ -10,7 +10,6 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.block.ModBlocks;
-import net.samu.mineloween.datagen.recipe.GemstoneGrinderRecipeBuilder;
 import net.samu.mineloween.item.ModItems;
 
 import java.util.List;
@@ -29,14 +28,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerBlasting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 100, "gem");
 
         // TODO: metti questa ricetta nel gemstone grinder e aggiungi polvere di altri minerali
-//        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_POWDER, 2)
-//                .input(ModItems.RAW_GEM)
-//                .criterion(hasItem(ModItems.RAW_GEM), conditionsFromItem(ModItems.RAW_GEM))
-//                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEM_POWDER)));
-
-        new GemstoneGrinderRecipeBuilder(ModItems.RAW_GEM, ModItems.GEM_POWDER, 2)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_POWDER, 2)
+                .input(ModItems.RAW_GEM)
                 .criterion(hasItem(ModItems.RAW_GEM), conditionsFromItem(ModItems.RAW_GEM))
-                .offerTo(exporter);
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEM_POWDER)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_CRYSTALS, 6)
                 .pattern(" P ")

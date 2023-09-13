@@ -34,17 +34,17 @@ public class ModRegistries {
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModBlocks.LAVANDA, 3), 26, 4, 0.02f));
+                    new ItemStack(ModBlocks.LAVANDA, 3), 10, 4, 0.02f));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 26, 3, 0.02f));
+                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 3, 0.02f));
         });
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 2),
-                    new ItemStack(ModItems.MALVA_SEEDS, 3), 18, 6, 0.04f));
+                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 6, 0.04f));
         });
     }
 }
