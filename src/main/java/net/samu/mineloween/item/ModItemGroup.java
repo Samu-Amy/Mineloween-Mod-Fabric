@@ -50,6 +50,14 @@ public class ModItemGroup {
                         entries.add(ModItems.MALVA_SEEDS);
                         entries.add(ModItems.MALVA_FLOWERS);
                         entries.add(ModBlocks.LAVANDA);
+
+                        entries.add(ModBlocks.ASH_LOG);
+                        entries.add(ModBlocks.ASH_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ASH_LOG);
+                        entries.add(ModBlocks.STRIPPED_ASH_WOOD);
+                        entries.add(ModBlocks.ASH_PLANKS);
+                        entries.add(ModBlocks.ASH_LEAVES);
+                        entries.add(ModBlocks.ASH_SAPLING);
                     }).build());
 
     public static void registerItemGroups() {

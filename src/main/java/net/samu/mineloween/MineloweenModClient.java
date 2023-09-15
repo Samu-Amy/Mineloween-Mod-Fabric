@@ -16,6 +16,8 @@ public class MineloweenModClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LAVANDA, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.POTTED_LAVANDA, RenderLayer.getCutout());
 
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ASH_SAPLING, RenderLayer.getCutout());
+
         HandledScreens.register(ModScreenHandlers.GEMSTONE_GRINDER_SCREEN_HANDLER, GemstoneGrinderScreen::new);
     }
 }

@@ -28,6 +28,14 @@
   "item.mineloween.malva_flowers": "Malva Flowers",
   "block.mineloween.lavanda": "Lavandula",
 
+  "block.mineloween.ash_log": "Ash Log",
+  "block.mineloween.ash_wood": "Ash Wood",
+  "block.mineloween.stripped_ash_log": "Stripped Ash Log",
+  "block.mineloween.stripped_ash_wood": "Stripped Ash Wood",
+  "block.mineloween.ash_planks": "Ash Planks",
+  "block.mineloween.ash_leaves": "Ash Leaves",
+  "block.mineloween.ash_sapling": "Ash Sapling",
+
   "block.mineloween.gem_ore": "Gem Ore",
   "block.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
   "block.mineloween.gemmed_cobblestone_stairs": "Gemmed Cobblestone Stairs",

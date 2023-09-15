@@ -38,5 +38,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_5")));
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_6")));
+
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN).add(ModBlocks.ASH_LOG, ModBlocks.ASH_WOOD, ModBlocks.STRIPPED_ASH_LOG, ModBlocks.STRIPPED_ASH_WOOD);
     }
 }
