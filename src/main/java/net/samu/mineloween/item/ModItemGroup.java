@@ -24,6 +24,8 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GEMSTONE_GRINDER);
                         entries.add(ModBlocks.DECORATIVE_BOOKSHELF);
 
+                        entries.add(ModItems.GOLD_POWDER);
+                        entries.add(ModItems.GOLD_COIN);
                         entries.add(ModItems.RAW_GEM);
                         entries.add(ModItems.GEM_POWDER);
                         entries.add(ModItems.GEM_CRYSTALS);

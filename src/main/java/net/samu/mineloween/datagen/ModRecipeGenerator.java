@@ -10,6 +10,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.block.ModBlocks;
+import net.samu.mineloween.datagen.recipe.GemstoneGrinderRecipeBuilder;
 import net.samu.mineloween.item.ModItems;
 
 import java.util.List;
@@ -27,11 +28,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 200, "gem");
         offerBlasting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 100, "gem");
 
-        // TODO: metti questa ricetta nel gemstone grinder e aggiungi polvere di altri minerali
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_POWDER, 2)
-                .input(ModItems.RAW_GEM)
+        // TODO: aggiungi polvere di altri minerali
+        new GemstoneGrinderRecipeBuilder(ModItems.RAW_GEM, ModItems.GEM_POWDER, 2)
                 .criterion(hasItem(ModItems.RAW_GEM), conditionsFromItem(ModItems.RAW_GEM))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEM_POWDER)));
+                .offerTo(exporter);
+
+        new GemstoneGrinderRecipeBuilder(Items.GOLD_INGOT, ModItems.GOLD_POWDER, 2)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GEM_CRYSTALS, 6)
                 .pattern(" P ")
@@ -52,6 +56,19 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GEM_POWDER), conditionsFromItem(ModItems.GEM_POWDER))
                 .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.GEM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOLD_COIN)
+                .pattern("GG")
+                .pattern("GG")
+                .input('G', ModItems.GOLD_POWDER)
+                .criterion(hasItem(ModItems.GOLD_POWDER), conditionsFromItem(ModItems.GOLD_POWDER))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.GOLD_COIN)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.GOLD_NUGGET, 9)
+                .pattern("GG")
+                .input('G', ModItems.GOLD_POWDER)
+                .criterion(hasItem(ModItems.GOLD_POWDER), conditionsFromItem(ModItems.GOLD_POWDER))
+                .offerTo(exporter, new Identifier("gold_nugget_from_gold_powder"));
 
 
         // -------- Blocks --------

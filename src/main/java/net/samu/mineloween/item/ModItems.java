@@ -17,6 +17,8 @@ public class ModItems {
 
 
     // -------- Minerali e derivati --------
+    public static final Item GOLD_POWDER = registerItem("gold_powder", new Item(new FabricItemSettings()));
+    public static final Item GOLD_COIN = registerItem("gold_coin", new Item(new FabricItemSettings()));
     public static final Item RAW_GEM = registerItem("raw_gem", new Item(new FabricItemSettings()));
     public static final Item GEM_POWDER = registerItem("gem_powder", new Item(new FabricItemSettings()));
     public static final Item GEM = registerItem("gem", new Item(new FabricItemSettings()));
