@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "mineloween:gold_powder"
+    }
+  },
+  "pattern": [
+    "GG",
+    "GG"
+  ],
+  "result": {
+    "item": "mineloween:gold_coin"
+  },
+  "show_notification": true
+}

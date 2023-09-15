@@ -10,6 +10,7 @@ import net.samu.mineloween.recipe.ModRecipes;
 import net.samu.mineloween.screen.ModScreenHandlers;
 import net.samu.mineloween.util.ModRegistries;
 import net.samu.mineloween.villager.ModVillagers;
+import net.samu.mineloween.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,5 +32,6 @@ public class MineloweenMod implements ModInitializer {
 		ModScreenHandlers.registerScreenHandler();
 
 		ModRecipes.registerRecipes();
+		ModWorldGeneration.generateModWorldGeneration();
 	}
 }

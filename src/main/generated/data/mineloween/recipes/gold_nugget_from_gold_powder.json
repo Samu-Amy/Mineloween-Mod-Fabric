@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "mineloween:gold_powder"
+    }
+  },
+  "pattern": [
+    "GG"
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:gold_nugget"
+  },
+  "show_notification": true
+}

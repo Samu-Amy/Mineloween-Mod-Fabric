@@ -1,0 +1,12 @@
+{
+  "type": "mineloween:gemstone_grinder",
+  "ingredients": [
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "output": {
+    "count": 2,
+    "item": "mineloween:gold_powder"
+  }
+}

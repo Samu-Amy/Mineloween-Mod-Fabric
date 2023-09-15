@@ -13,6 +13,7 @@ import net.samu.mineloween.MineloweenMod;
 import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
 import net.samu.mineloween.block.custom.GemstoneGrinderBlock;
 import net.samu.mineloween.block.custom.MalvaCropBlock;
+import net.samu.mineloween.world.tree.AshSaplingGenerator;
 
 public class ModBlocks {
 
@@ -42,7 +43,7 @@ public class ModBlocks {
     public static final Block STRIPPED_ASH_WOOD = registerBlock("stripped_ash_wood", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block ASH_PLANKS = registerBlock("ash_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block ASH_LEAVES = registerBlock("ash_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-    public static final Block ASH_SAPLING = registerBlock("ash_sapling", new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block ASH_SAPLING = registerBlock("ash_sapling", new SaplingBlock(new AshSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
 
     private static Block registerBlock(String name, Block block) {
