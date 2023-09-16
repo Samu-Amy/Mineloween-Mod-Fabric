@@ -14,6 +14,18 @@ public class ModItemGroup {
     public static final ItemGroup MINELOWEEN_GROUP = Registry.register(Registries.ITEM_GROUP, new Identifier(MineloweenMod.MOD_ID, "mineloween_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mineloween_group")).icon(() -> new ItemStack(ModItems.ICON))
                     .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.ASH_LOG);
+                        entries.add(ModBlocks.ASH_WOOD);
+                        entries.add(ModBlocks.STRIPPED_ASH_LOG);
+                        entries.add(ModBlocks.STRIPPED_ASH_WOOD);
+                        entries.add(ModBlocks.ASH_PLANKS);
+                        entries.add(ModBlocks.ASH_WOOD_STAIRS);
+                        entries.add(ModBlocks.ASH_WOOD_SLAB);
+                        entries.add(ModBlocks.ASH_WOOD_FENCE_GATE);
+                        entries.add(ModBlocks.ASH_LEAVES);
+                        entries.add(ModBlocks.ASH_SAPLING);
+                        entries.add(ModBlocks.POTTED_ASH_SAPLING);
+
                         entries.add(ModBlocks.GEM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_GEM_ORE);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE);
@@ -53,14 +65,6 @@ public class ModItemGroup {
                         entries.add(ModItems.MALVA_SEEDS);
                         entries.add(ModItems.MALVA_FLOWERS);
                         entries.add(ModBlocks.LAVANDA);
-
-                        entries.add(ModBlocks.ASH_LOG);
-                        entries.add(ModBlocks.ASH_WOOD);
-                        entries.add(ModBlocks.STRIPPED_ASH_LOG);
-                        entries.add(ModBlocks.STRIPPED_ASH_WOOD);
-                        entries.add(ModBlocks.ASH_PLANKS);
-                        entries.add(ModBlocks.ASH_LEAVES);
-                        entries.add(ModBlocks.ASH_SAPLING);
                     }).build());
 
     public static void registerItemGroups() {

@@ -32,6 +32,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.GEMSTONE_GRINDER
         );
 
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(
+                ModBlocks.ASH_LOG,
+                ModBlocks.ASH_WOOD,
+                ModBlocks.STRIPPED_ASH_LOG,
+                ModBlocks.STRIPPED_ASH_WOOD,
+                ModBlocks.ASH_PLANKS,
+                ModBlocks.ASH_WOOD_STAIRS,
+                ModBlocks.ASH_WOOD_SLAB,
+                ModBlocks.ASH_WOOD_FENCE_GATE
+        );
+
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.GEM_ORE);
 
@@ -41,7 +52,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.GEMMED_COBBLESTONE_WALL);
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
-                .add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
+                .add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE, ModBlocks.ASH_WOOD_FENCE_GATE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_5")));
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_6")));

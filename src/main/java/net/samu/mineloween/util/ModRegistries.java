@@ -25,7 +25,7 @@ public class ModRegistries {
     public static void registerFuels() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        registry.add(ModItems.LEAF, 50);
+        registry.add(ModItems.LEAF, 50); //TODO: forse va aggiunto il legno
     }
 
     private static void registerModCompostables() {
@@ -46,6 +46,9 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_ASH_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_WOOD_STAIRS, 5, 18);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_WOOD_SLAB, 5, 10);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_WOOD_FENCE_GATE, 5, 15);
     }
 
     private static void registerCustomTrades() {

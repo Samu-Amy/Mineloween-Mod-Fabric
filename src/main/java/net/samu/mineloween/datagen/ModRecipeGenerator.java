@@ -94,8 +94,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GEMMED_COBBLESTONE_STAIRS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GEMMED_COBBLESTONE_SLAB, 6)
-                .pattern("   ")
-                .pattern("   ")
                 .pattern("CCC")
                 .input('C', ModBlocks.GEMMED_COBBLESTONE)
                 .criterion(hasItem(ModBlocks.GEMMED_COBBLESTONE), conditionsFromItem(ModBlocks.GEMMED_COBBLESTONE))
@@ -110,6 +108,28 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GEM_CRYSTALS), conditionsFromItem(ModItems.GEM_CRYSTALS))
                 .criterion(hasItem(Blocks.COBBLESTONE), conditionsFromItem(Blocks.COBBLESTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GEMMED_COBBLESTONE_WALL)));
+
+        // TODO: gemmed cobblestone fence gate
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_PLANKS, 4)
+                .input(ModBlocks.ASH_LOG).criterion(hasItem(ModBlocks.ASH_LOG), conditionsFromItem(ModBlocks.ASH_LOG))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_PLANKS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_WOOD_STAIRS, 4)
+                .pattern("C  ")
+                .pattern("CC ")
+                .pattern("CCC")
+                .input('C', ModBlocks.ASH_PLANKS)
+                .criterion(hasItem(ModBlocks.ASH_PLANKS), conditionsFromItem(ModBlocks.ASH_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_WOOD_STAIRS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_WOOD_SLAB, 6)
+                .pattern("CCC")
+                .input('C', ModBlocks.ASH_PLANKS)
+                .criterion(hasItem(ModBlocks.ASH_PLANKS), conditionsFromItem(ModBlocks.ASH_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_WOOD_SLAB)));
+
+        //TODO: ash fence gate
 
 
         // -------- Tools --------

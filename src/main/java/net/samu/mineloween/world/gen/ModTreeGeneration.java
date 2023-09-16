@@ -8,13 +8,13 @@ import net.samu.mineloween.world.ModPlacedFeatures;
 
 public class ModTreeGeneration {
     public static void generateTrees() {
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.MEADOW, BiomeKeys.RIVER, BiomeKeys.WOODED_BADLANDS),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.RIVER, BiomeKeys.WOODED_BADLANDS),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ASH_1_PLAINS_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ASH_1_FOREST_PLACED_KEY);
 
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.MEADOW, BiomeKeys.RIVER, BiomeKeys.WOODED_BADLANDS),
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.RIVER, BiomeKeys.WOODED_BADLANDS),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ASH_2_PLAINS_PLACED_KEY);
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST, BiomeKeys.FLOWER_FOREST),

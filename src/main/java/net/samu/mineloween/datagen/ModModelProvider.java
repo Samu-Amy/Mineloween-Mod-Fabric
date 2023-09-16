@@ -38,9 +38,14 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerLog(ModBlocks.ASH_LOG).log(ModBlocks.ASH_LOG).wood(ModBlocks.ASH_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ASH_LOG).log(ModBlocks.STRIPPED_ASH_LOG).wood(ModBlocks.STRIPPED_ASH_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ASH_PLANKS);
+        BlockStateModelGenerator.BlockTexturePool ashWoodTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ASH_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ASH_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.ASH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ASH_SAPLING, ModBlocks.POTTED_ASH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        ashWoodTexturePool.stairs(ModBlocks.ASH_WOOD_STAIRS);
+        ashWoodTexturePool.slab(ModBlocks.ASH_WOOD_SLAB);
+        ashWoodTexturePool.fenceGate(ModBlocks.ASH_WOOD_FENCE_GATE);
     }
 
     public BlockStateModelGenerator.BlockTexturePool registerDecorativeBookshelfBlock(BlockStateModelGenerator blockStateModelGenerator, Block decorativeBookshelfBlock) {

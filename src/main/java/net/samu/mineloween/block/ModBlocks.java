@@ -30,13 +30,6 @@ public class ModBlocks {
     public static final Block DECORATIVE_BOOKSHELF = registerBlock("decorative_bookshelf", new DecorativeBookshelfBlock(FabricBlockSettings.copyOf(Blocks.BOOKSHELF)));
 
 
-
-    // -------- Crop --------
-    public static final Block MALVA_CROP = registerBlockWithoutBlockItem("malva_crop", new MalvaCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
-    public static final Block LAVANDA = registerBlock("lavanda", new FlowerBlock(StatusEffects.RESISTANCE, 5, FabricBlockSettings.copyOf(Blocks.AZURE_BLUET)));
-    public static final Block POTTED_LAVANDA = registerBlockWithoutBlockItem("potted_lavanda", new FlowerPotBlock(LAVANDA, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET)));
-
-
     // -------- Trees --------
     public static final Block ASH_LOG = registerBlock("ash_log", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block ASH_WOOD = registerBlock("ash_wood", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
@@ -45,6 +38,16 @@ public class ModBlocks {
     public static final Block ASH_PLANKS = registerBlock("ash_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block ASH_LEAVES = registerBlock("ash_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block ASH_SAPLING = registerBlock("ash_sapling", new SaplingBlock(new AshSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+    public static final Block POTTED_ASH_SAPLING = registerBlockWithoutBlockItem("potted_ash_sapling", new FlowerPotBlock(ASH_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING)));
+    public static final Block ASH_WOOD_STAIRS = registerBlock("ash_wood_stairs", new StairsBlock(ModBlocks.ASH_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block ASH_WOOD_SLAB = registerBlock("ash_wood_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
+    public static final Block ASH_WOOD_FENCE_GATE = registerBlock("ash_wood_fence_gate", new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
+
+
+    // -------- Crop --------
+    public static final Block MALVA_CROP = registerBlockWithoutBlockItem("malva_crop", new MalvaCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block LAVANDA = registerBlock("lavanda", new FlowerBlock(StatusEffects.RESISTANCE, 5, FabricBlockSettings.copyOf(Blocks.AZURE_BLUET)));
+    public static final Block POTTED_LAVANDA = registerBlockWithoutBlockItem("potted_lavanda", new FlowerPotBlock(LAVANDA, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET)));
 
 
     private static Block registerBlock(String name, Block block) {

@@ -30,14 +30,6 @@
   "item.mineloween.malva_flowers": "Malva Flowers",
   "block.mineloween.lavanda": "Lavandula",
 
-  "block.mineloween.ash_log": "Ash Log",
-  "block.mineloween.ash_wood": "Ash Wood",
-  "block.mineloween.stripped_ash_log": "Stripped Ash Log",
-  "block.mineloween.stripped_ash_wood": "Stripped Ash Wood",
-  "block.mineloween.ash_planks": "Ash Planks",
-  "block.mineloween.ash_leaves": "Ash Leaves",
-  "block.mineloween.ash_sapling": "Ash Sapling",
-
   "block.mineloween.gem_ore": "Gem Ore",
   "block.mineloween.deepslate_gem_ore": "Deepslate Gem Ore",
   "block.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
@@ -45,6 +37,17 @@
   "block.mineloween.gemmed_cobblestone_slab": "Gemmed Cobblestone Slab",
   "block.mineloween.gemmed_cobblestone_wall": "Gemmed Cobblestone Wall",
   "block.mineloween.gemmed_cobblestone_fence_gate": "Gemmed Cobblestone Fence Gate",
+
+  "block.mineloween.ash_log": "Ash Log",
+  "block.mineloween.ash_wood": "Ash Wood",
+  "block.mineloween.stripped_ash_log": "Stripped Ash Log",
+  "block.mineloween.stripped_ash_wood": "Stripped Ash Wood",
+  "block.mineloween.ash_planks": "Ash Planks",
+  "block.mineloween.ash_leaves": "Ash Leaves",
+  "block.mineloween.ash_sapling": "Ash Sapling",
+  "block.mineloween.ash_wood_stairs": "Ash Stairs",
+  "block.mineloween.ash_wood_slab": "Ash Slab",
+  "block.mineloween.ash_wood_fence_gate": "Ash Fence Gate",
 
   "block.mineloween.gemstone_grinder": "Gemstone Grinder",
   "block.mineloween.decorative_bookshelf": "Decorative Bookshelf",
