@@ -1,7 +1,9 @@
-// 1.20.1	2023-09-15T21:06:31.5592876	Mineloween Mod/World Gen
+// 1.20.1	2023-09-16T09:17:59.5685364	Mineloween Mod/World Gen
 b75e8e2b42576829c8013fe748ced138553b9dd7 data\mineloween\worldgen\placed_feature\ash_2_forest_placed.json
 33bf7ffca8633d994b858f3b072702c9a0d2490e data\mineloween\worldgen\placed_feature\ash_2_plains_placed.json
+838ec873682c454014165bbfedb6cc000df33cbf data\mineloween\worldgen\placed_feature\gem_ore_placed.json
 80313a2406d012c956bbab5386b9a1141e11a74d data\mineloween\worldgen\placed_feature\ash_1_forest_placed.json
-b607f6933543f7e61aa605d67030440bfc1ff101 data\mineloween\worldgen\configured_feature\ash_2.json
+9ae75e4ea044ccde24d9ab7d54f74357be627963 data\mineloween\worldgen\configured_feature\ash_2.json
 5fddd3a471af62f9e7bdf530249cc0f22eec5212 data\mineloween\worldgen\placed_feature\ash_1_plains_placed.json
+4c62562f92cc4ccc8e3ec1ce4cd82df57585ffce data\mineloween\worldgen\configured_feature\gem_ore.json
 cc06be0a081af96140fa33fb35611bdbdd6d13f5 data\mineloween\worldgen\configured_feature\ash_1.json
