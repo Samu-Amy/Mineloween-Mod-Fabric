@@ -25,7 +25,7 @@ public class ModRegistries {
     public static void registerFuels() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        registry.add(ModItems.LEAF, 50); //TODO: forse va aggiunto il legno
+        registry.add(ModItems.LEAF, 50);
     }
 
     private static void registerModCompostables() {

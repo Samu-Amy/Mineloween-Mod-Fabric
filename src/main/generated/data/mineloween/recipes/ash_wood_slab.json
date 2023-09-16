@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "C": {
+    "P": {
       "item": "mineloween:ash_planks"
     }
   },
   "pattern": [
-    "CCC"
+    "PPP"
   ],
   "result": {
     "count": 6,

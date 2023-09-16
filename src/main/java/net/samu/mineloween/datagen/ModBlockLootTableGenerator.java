@@ -24,6 +24,9 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GEMMED_COBBLESTONE_WALL);
         addDrop(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
         addDrop(ModBlocks.ASH_LOG);
+        addDrop(ModBlocks.ASH_WOOD);
+        addDrop(ModBlocks.STRIPPED_ASH_LOG);
+        addDrop(ModBlocks.STRIPPED_ASH_WOOD);
         addDrop(ModBlocks.ASH_PLANKS);
         addDrop(ModBlocks.ASH_WOOD_STAIRS);
         addDrop(ModBlocks.ASH_WOOD_SLAB);

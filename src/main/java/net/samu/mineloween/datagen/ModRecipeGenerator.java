@@ -109,27 +109,41 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Blocks.COBBLESTONE), conditionsFromItem(Blocks.COBBLESTONE))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GEMMED_COBBLESTONE_WALL)));
 
-        // TODO: gemmed cobblestone fence gate
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE)
+                .pattern("SCS")
+                .pattern("SCS")
+                .input('C', ModBlocks.GEMMED_COBBLESTONE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.GEMMED_COBBLESTONE), conditionsFromItem(ModBlocks.GEMMED_COBBLESTONE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_PLANKS, 4)
                 .input(ModBlocks.ASH_LOG).criterion(hasItem(ModBlocks.ASH_LOG), conditionsFromItem(ModBlocks.ASH_LOG))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_PLANKS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_WOOD_STAIRS, 4)
-                .pattern("C  ")
-                .pattern("CC ")
-                .pattern("CCC")
-                .input('C', ModBlocks.ASH_PLANKS)
+                .pattern("P  ")
+                .pattern("PP ")
+                .pattern("PPP")
+                .input('P', ModBlocks.ASH_PLANKS)
                 .criterion(hasItem(ModBlocks.ASH_PLANKS), conditionsFromItem(ModBlocks.ASH_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_WOOD_STAIRS)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_WOOD_SLAB, 6)
-                .pattern("CCC")
-                .input('C', ModBlocks.ASH_PLANKS)
+                .pattern("PPP")
+                .input('P', ModBlocks.ASH_PLANKS)
                 .criterion(hasItem(ModBlocks.ASH_PLANKS), conditionsFromItem(ModBlocks.ASH_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_WOOD_SLAB)));
 
-        //TODO: ash fence gate
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_WOOD_FENCE_GATE)
+                .pattern("SPS")
+                .pattern("SPS")
+                .input('P', ModBlocks.ASH_PLANKS)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModBlocks.ASH_PLANKS), conditionsFromItem(ModBlocks.ASH_PLANKS))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.ASH_WOOD_FENCE_GATE)));
 
 
         // -------- Tools --------

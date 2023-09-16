@@ -4,6 +4,9 @@
     "mineloween:ash_log",
     "mineloween:ash_wood",
     "mineloween:stripped_ash_log",
-    "mineloween:stripped_ash_wood"
+    "mineloween:stripped_ash_wood",
+    "mineloween:ash_wood_stairs",
+    "mineloween:ash_wood_slab",
+    "mineloween:ash_wood_fence_gate"
   ]
 }

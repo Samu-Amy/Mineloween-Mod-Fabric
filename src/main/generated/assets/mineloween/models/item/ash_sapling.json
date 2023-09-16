@@ -1,3 +1,6 @@
 {
-  "parent": "mineloween:block/ash_sapling"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mineloween:block/ash_sapling"
+  }
 }
