@@ -15,6 +15,7 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.mineloween_group")).icon(() -> new ItemStack(ModItems.ICON))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.GEM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_GEM_ORE);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_SLAB);

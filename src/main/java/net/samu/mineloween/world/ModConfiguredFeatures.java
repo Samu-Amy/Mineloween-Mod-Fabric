@@ -26,20 +26,19 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-//        RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+        RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
-        List<OreFeatureConfig.Target> overwolrdGemOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.GEM_ORE.getDefaultState()));
 
-//        List<OreFeatureConfig.Target> overwolrdGemOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.GEM_ORE.getDefaultState()),
-//                OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.GEM_ORE.getDefaultState())); TODO: fai versione deepslate e usa questa lista
+        List<OreFeatureConfig.Target> overwolrdGemOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.GEM_ORE.getDefaultState()),
+                OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_GEM_ORE.getDefaultState()));
 
         register(context, ASH_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(5, 5, 3),
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(4, 3, 2),
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), ConstantIntProvider.create(3), 80),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, ASH_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(5, 5, 3),
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(4, 3, 2),
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 

@@ -28,6 +28,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerSmelting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 200, "gem");
         offerBlasting(exporter, List.of(ModBlocks.GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2f, 100, "gem");
 
+        offerSmelting(exporter, List.of(ModBlocks.DEEPSLATE_GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2.5f, 200, "gem");
+        offerBlasting(exporter, List.of(ModBlocks.DEEPSLATE_GEM_ORE), RecipeCategory.MISC, ModItems.RAW_GEM, 2.5f, 100, "gem");
+
         // TODO: aggiungi polvere di altri minerali
         new GemstoneGrinderRecipeBuilder(ModItems.RAW_GEM, ModItems.GEM_POWDER, 2)
                 .criterion(hasItem(ModItems.RAW_GEM), conditionsFromItem(ModItems.RAW_GEM))

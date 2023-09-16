@@ -23,6 +23,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(
                 ModBlocks.GEM_ORE,
+                ModBlocks.DEEPSLATE_GEM_ORE,
                 ModBlocks.GEMMED_COBBLESTONE,
                 ModBlocks.GEMMED_COBBLESTONE_STAIRS,
                 ModBlocks.GEMMED_COBBLESTONE_SLAB,
@@ -31,10 +32,16 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 ModBlocks.GEMSTONE_GRINDER
         );
 
-        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.GEM_ORE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.GEM_ORE);
 
-        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.GEMMED_COBBLESTONE_WALL);
-        getOrCreateTagBuilder(BlockTags.FENCE_GATES).add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.DEEPSLATE_GEM_ORE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.GEMMED_COBBLESTONE_WALL);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_5")));
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_6")));

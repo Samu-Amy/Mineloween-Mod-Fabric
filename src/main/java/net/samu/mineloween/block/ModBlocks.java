@@ -19,6 +19,7 @@ public class ModBlocks {
 
     // -------- Blocchi --------
     public static final Block GEM_ORE = registerBlock("gem_ore", new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE)));
+    public static final Block DEEPSLATE_GEM_ORE = registerBlock("deepslate_gem_ore", new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_DIAMOND_ORE)));
     public static final Block GEMMED_COBBLESTONE = registerBlock("gemmed_cobblestone", new Block(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
     public static final Block GEMMED_COBBLESTONE_STAIRS = registerBlock("gemmed_cobblestone_stairs", new StairsBlock(ModBlocks.GEMMED_COBBLESTONE.getDefaultState(), FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
     public static final Block GEMMED_COBBLESTONE_SLAB = registerBlock("gemmed_cobblestone_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.COBBLESTONE)));
