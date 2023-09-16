@@ -41,7 +41,6 @@ public class ModModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool ashWoodTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ASH_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ASH_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.ASH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ASH_SAPLING, ModBlocks.POTTED_ASH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         ashWoodTexturePool.stairs(ModBlocks.ASH_WOOD_STAIRS);
         ashWoodTexturePool.slab(ModBlocks.ASH_WOOD_SLAB);

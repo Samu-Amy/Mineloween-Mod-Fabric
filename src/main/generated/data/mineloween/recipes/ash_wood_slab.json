@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "C": {
-      "item": "mineloween:gemmed_cobblestone"
+      "item": "mineloween:ash_planks"
     }
   },
   "pattern": [
@@ -11,7 +11,7 @@
   ],
   "result": {
     "count": 6,
-    "item": "mineloween:gemmed_cobblestone_slab"
+    "item": "mineloween:ash_wood_slab"
   },
   "show_notification": true
 }

@@ -24,7 +24,6 @@ public class ModItemGroup {
                         entries.add(ModBlocks.ASH_WOOD_FENCE_GATE);
                         entries.add(ModBlocks.ASH_LEAVES);
                         entries.add(ModBlocks.ASH_SAPLING);
-                        entries.add(ModBlocks.POTTED_ASH_SAPLING);
 
                         entries.add(ModBlocks.GEM_ORE);
                         entries.add(ModBlocks.DEEPSLATE_GEM_ORE);

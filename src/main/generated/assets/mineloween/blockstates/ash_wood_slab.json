@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mineloween:block/ash_wood_slab"
+    },
+    "type=double": {
+      "model": "mineloween:block/ash_planks"
+    },
+    "type=top": {
+      "model": "mineloween:block/ash_wood_slab_top"
+    }
+  }
+}

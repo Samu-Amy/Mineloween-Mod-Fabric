@@ -1,9 +1,10 @@
-// 1.20.1	2023-09-16T17:08:21.3909723	Mineloween Mod/Tags for minecraft:block
+// 1.20.1	2023-09-16T18:30:24.291462	Mineloween Mod/Tags for minecraft:block
 b033c12a363649fad3e85f60e02d2a392514c5ec data\minecraft\tags\blocks\walls.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_5.json
 ca838aab8169deca06ffebe2cbf036963ccb4325 data\minecraft\tags\blocks\mineable\pickaxe.json
 d27d57d5ff054f41949bd77b86c6a2a4bde610eb data\minecraft\tags\blocks\needs_iron_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_6.json
 88474be33ee100a9f1934420f052454ee876d2d4 data\minecraft\tags\blocks\logs_that_burn.json
-7709304d56f7e45a147cb8cda3733bd3972d9767 data\minecraft\tags\blocks\fence_gates.json
+e941ff662545f29c0c36c02f8b2a0bcbdf6639bc data\minecraft\tags\blocks\mineable\axe.json
+9634dd3fb2387ab592056f755420dcc5d136fb52 data\minecraft\tags\blocks\fence_gates.json
 4cc0da4e011eb4807991448ee6460f2a39388aa2 data\minecraft\tags\blocks\needs_diamond_tool.json
