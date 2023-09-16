@@ -23,8 +23,11 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ASH_KEY_1 = registerKey("ash_1");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ASH_KEY_2 = registerKey("ash_2");
     public static final RegistryKey<ConfiguredFeature<?, ?>> GEM_ORE_KEY = registerKey("gem_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAVANDA_KEY = registerKey("lavanda");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MALVA_FLOWER_KEY = registerKey("malva_flower");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
+        // ----- ORES -----
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
@@ -32,8 +35,11 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overwolrdGemOres = List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.GEM_ORE.getDefaultState()),
                 OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.DEEPSLATE_GEM_ORE.getDefaultState()));
 
+        register(context, GEM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overwolrdGemOres, 6, 0.5f));
+
+        // ----- TREES -----
         register(context, ASH_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(4, 3, 2),
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(5, 4, 2),
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), ConstantIntProvider.create(3), 80),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
@@ -42,7 +48,12 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
-        register(context, GEM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overwolrdGemOres, 6, 0.5f));
+        // ----- FLOWERS -----
+        register(context, LAVANDA_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LAVANDA)))));
+
+        register(context, MALVA_FLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(4, 2, 1, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.MALVA_FLOWER)))));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

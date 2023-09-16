@@ -33,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DECORATIVE_BOOKSHELF);
 
         blockStateModelGenerator.registerCrop(ModBlocks.MALVA_CROP, MalvaCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.MALVA_FLOWER, ModBlocks.POTTED_MALVA_FLOWER, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAVANDA, ModBlocks.POTTED_LAVANDA, BlockStateModelGenerator.TintType.NOT_TINTED);
 

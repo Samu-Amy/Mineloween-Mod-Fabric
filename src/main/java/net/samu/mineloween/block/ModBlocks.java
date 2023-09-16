@@ -45,6 +45,8 @@ public class ModBlocks {
 
     // -------- Crop --------
     public static final Block MALVA_CROP = registerBlockWithoutBlockItem("malva_crop", new MalvaCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
+    public static final Block MALVA_FLOWER = registerBlock("malva_flower", new FlowerBlock(StatusEffects.REGENERATION, 5, FabricBlockSettings.copyOf(Blocks.AZURE_BLUET)));
+    public static final Block POTTED_MALVA_FLOWER = registerBlockWithoutBlockItem("potted_malva_flower", new FlowerPotBlock(MALVA_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET)));
     public static final Block LAVANDA = registerBlock("lavanda", new FlowerBlock(StatusEffects.RESISTANCE, 5, FabricBlockSettings.copyOf(Blocks.AZURE_BLUET)));
     public static final Block POTTED_LAVANDA = registerBlockWithoutBlockItem("potted_lavanda", new FlowerPotBlock(LAVANDA, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET)));
 

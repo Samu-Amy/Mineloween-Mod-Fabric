@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-16T19:02:30.9559318	Mineloween Mod/Block Loot Tables
+// 1.20.1	2023-09-16T20:13:14.6651051	Mineloween Mod/Block Loot Tables
 0c085ae430f0189b238f7ed5a7c7eefa72f54f3b data\mineloween\loot_tables\blocks\ash_wood.json
 9c94f9406ce4aa6ce69cd07b479dd69ad5fd6784 data\mineloween\loot_tables\blocks\ash_planks.json
 2e493bfed749ede9e30d8a09bdb612dedfca3bb7 data\mineloween\loot_tables\blocks\gemmed_cobblestone.json
@@ -7,12 +7,14 @@ aef35e2c4d437260946f44b184a30881422e0424 data\mineloween\loot_tables\blocks\stri
 8731d1de99e69c7e0bf2fee4305ea6bc3bf86dba data\mineloween\loot_tables\blocks\gemmed_cobblestone_fence_gate.json
 1815573681f53a993712f309ce3e7bc8efd48073 data\mineloween\loot_tables\blocks\ash_sapling.json
 f04345a26ffee587f737351bddacf37b831b00b0 data\mineloween\loot_tables\blocks\deepslate_gem_ore.json
+41e65a27d6cc69ad90457fff4ed9cf60d6e80619 data\mineloween\loot_tables\blocks\malva_flower.json
 4427445359bec667c220f201b943598be4ad34e0 data\mineloween\loot_tables\blocks\gem_ore.json
 8f145f95a0387b1a6c045a996a83335621109f5e data\mineloween\loot_tables\blocks\decorative_bookshelf.json
 54a24dd6e59b425bd288e972c4f60533b54708ca data\mineloween\loot_tables\blocks\gemmed_cobblestone_stairs.json
 130e76341879df1a7ad2280532a53587733deb68 data\mineloween\loot_tables\blocks\ash_wood_slab.json
 5be109bc29a9195ccd9c02b9530d12c6b619da6b data\mineloween\loot_tables\blocks\ash_wood_stairs.json
 b9f841641e3d9dda338f94de887576c91eae027e data\mineloween\loot_tables\blocks\malva_crop.json
+428bbfe4ce4e4e7f66b6bcd1a9953e45834f94c5 data\mineloween\loot_tables\blocks\lavanda.json
 c223c40e839555058c0a759cdd90bb2a8e8f9098 data\mineloween\loot_tables\blocks\gemmed_cobblestone_wall.json
 632133fcaea57757fb0e80b21e5815a9a612d96f data\mineloween\loot_tables\blocks\ash_wood_fence_gate.json
 0d1d280f98dbe1f1eafca4842c104f73b32a84b0 data\mineloween\loot_tables\blocks\ash_log.json
