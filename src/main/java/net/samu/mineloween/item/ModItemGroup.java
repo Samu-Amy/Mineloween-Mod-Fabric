@@ -64,6 +64,8 @@ public class ModItemGroup {
                         entries.add(ModItems.MALVA_SEEDS);
                         entries.add(ModItems.MALVA_FLOWERS);
                         entries.add(ModBlocks.LAVANDA);
+
+                        entries.add(ModItems.OWL_SPAWN_EGG);
                     }).build());
 
     public static void registerItemGroups() {

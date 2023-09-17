@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
 import net.samu.mineloween.block.ModBlocks;
+import net.samu.mineloween.entity.ModEntities;
 import net.samu.mineloween.item.custom.ModScytheItem;
 
 public class ModItems {
@@ -55,6 +56,9 @@ public class ModItems {
     public static final Item MALVA_SEEDS = registerItem("malva_seeds", new AliasedBlockItem(ModBlocks.MALVA_CROP, new FabricItemSettings()));
     public static final Item MALVA_FLOWERS = registerItem("malva_flowers", new Item(new FabricItemSettings()));
 
+
+    // -------- Mobs --------
+    public static final Item OWL_SPAWN_EGG = registerItem("owl_spawn_egg", new SpawnEggItem(ModEntities.OWL, 0xa4744c, 0x774d33, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

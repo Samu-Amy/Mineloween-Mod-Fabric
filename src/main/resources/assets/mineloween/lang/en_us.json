@@ -55,5 +55,8 @@
 
   "entity.minecraft.villager.herborist": "Herborist",
 
+  "entity.mineloween.owl": "Owl",
+  "item.mineloween.owl_spawn_egg": "Owl Spawn Egg",
+
   "itemgroup.mineloween_group": "Mineloween"
 }
