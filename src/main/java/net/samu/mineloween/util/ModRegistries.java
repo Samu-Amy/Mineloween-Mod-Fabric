@@ -12,6 +12,7 @@ import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.entity.ModEntities;
+import net.samu.mineloween.entity.custom.GhostEntity;
 import net.samu.mineloween.entity.custom.OwlEntity;
 import net.samu.mineloween.item.ModItems;
 import net.samu.mineloween.villager.ModVillagers;
@@ -34,6 +35,7 @@ public class ModRegistries {
 
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.OWL, OwlEntity.createOwlAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.GHOST, GhostEntity.createGhostAttributes());
     }
 
     private static void registerModCompostables() {

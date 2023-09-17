@@ -95,8 +95,10 @@ public class OwlEntity extends AnimalEntity {
     }
 
     public static DefaultAttributeContainer.Builder createOwlAttributes() {
-        return MobEntity.createMobAttributes().add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0)
-                .add(EntityAttributes.GENERIC_FLYING_SPEED, 0.4).add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2);
+        return MobEntity.createMobAttributes()
+                .add(EntityAttributes.GENERIC_MAX_HEALTH, 10.0)
+                .add(EntityAttributes.GENERIC_FLYING_SPEED, 0.4)
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.2);
     }
 
     @Nullable

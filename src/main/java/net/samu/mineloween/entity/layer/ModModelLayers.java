@@ -6,4 +6,5 @@ import net.samu.mineloween.MineloweenMod;
 
 public class ModModelLayers {
     public static final EntityModelLayer OWL = new EntityModelLayer(new Identifier(MineloweenMod.MOD_ID, "owl"), "main");
+    public static final EntityModelLayer GHOST = new EntityModelLayer(new Identifier(MineloweenMod.MOD_ID, "ghost"), "main");
 }

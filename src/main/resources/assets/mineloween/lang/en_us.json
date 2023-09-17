@@ -57,6 +57,8 @@
 
   "entity.mineloween.owl": "Owl",
   "item.mineloween.owl_spawn_egg": "Owl Spawn Egg",
+  "entity.mineloween.ghost": "Ghost",
+  "item.mineloween.ghost_spawn_egg": "Ghost Spawn Egg",
 
   "itemgroup.mineloween_group": "Mineloween"
 }

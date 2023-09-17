@@ -66,6 +66,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.LAVANDA);
 
                         entries.add(ModItems.OWL_SPAWN_EGG);
+                        entries.add(ModItems.GHOST_SPAWN_EGG);
                     }).build());
 
     public static void registerItemGroups() {

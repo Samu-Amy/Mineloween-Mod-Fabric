@@ -59,6 +59,7 @@ public class ModItems {
 
     // -------- Mobs --------
     public static final Item OWL_SPAWN_EGG = registerItem("owl_spawn_egg", new SpawnEggItem(ModEntities.OWL, 0xa4744c, 0x774d33, new FabricItemSettings()));
+    public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg", new SpawnEggItem(ModEntities.GHOST, 0xf2f2f2, 0xffffff, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

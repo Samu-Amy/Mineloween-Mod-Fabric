@@ -92,6 +92,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MALVA_FLOWERS, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.OWL_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.GHOST_SPAWN_EGG, new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
     }
 }
 

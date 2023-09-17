@@ -4,11 +4,11 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.entity.ModEntities;
+import net.samu.mineloween.entity.client.GhostRenderer;
 import net.samu.mineloween.entity.client.OwlModel;
 import net.samu.mineloween.entity.client.OwlRenderer;
 import net.samu.mineloween.entity.layer.ModModelLayers;
@@ -30,5 +30,6 @@ public class MineloweenModClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.OWL, OwlModel::getTexturedModelData);
 
         EntityRendererRegistry.register(ModEntities.OWL, OwlRenderer::new);
+        EntityRendererRegistry.register(ModEntities.GHOST, GhostRenderer::new);
     }
 }
