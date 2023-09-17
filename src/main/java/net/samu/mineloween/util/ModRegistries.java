@@ -1,5 +1,6 @@
 package net.samu.mineloween.util;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -10,6 +11,8 @@ import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.VillagerProfession;
 import net.samu.mineloween.block.ModBlocks;
+import net.samu.mineloween.entity.ModEntities;
+import net.samu.mineloween.entity.custom.OwlEntity;
 import net.samu.mineloween.item.ModItems;
 import net.samu.mineloween.villager.ModVillagers;
 
@@ -20,12 +23,17 @@ public class ModRegistries {
         registerStrippables();
         registerFlammables();
         registerCustomTrades();
+        registerAttributes();
     }
 
     public static void registerFuels() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
         registry.add(ModItems.LEAF, 50);
+    }
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.OWL, OwlEntity.createOwlAttributes());
     }
 
     private static void registerModCompostables() {

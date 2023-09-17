@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.block.entity.ModBlockEntities;
+import net.samu.mineloween.entity.ModEntities;
 import net.samu.mineloween.item.ModItemGroup;
 import net.samu.mineloween.item.ModItems;
 import net.samu.mineloween.recipe.ModRecipes;
@@ -33,5 +34,7 @@ public class MineloweenMod implements ModInitializer {
 
 		ModRecipes.registerRecipes();
 		ModWorldGeneration.generateModWorldGeneration();
+
+		ModEntities.registerModEntities();
 	}
 }

@@ -49,7 +49,7 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
         // ----- FLOWERS -----
-        register(context, LAVANDA_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        register(context, LAVANDA_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 16, 6, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LAVANDA)))));
 
         register(context, MALVA_FLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(4, 2, 1, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
