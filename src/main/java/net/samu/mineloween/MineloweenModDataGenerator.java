@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.samu.mineloween.datagen.*;
 import net.samu.mineloween.world.ModConfiguredFeatures;
 import net.samu.mineloween.world.ModPlacedFeatures;
+import net.samu.mineloween.world.biome.ModBiomes;
 
 public class MineloweenModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -27,5 +28,6 @@ public class MineloweenModDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
 	}
 }

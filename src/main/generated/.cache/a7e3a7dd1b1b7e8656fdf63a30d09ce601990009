@@ -1,15 +1,15 @@
-// 1.20.1	2023-09-18T18:40:19.4833184	Mineloween Mod/Tags for minecraft:block
+// 1.20.1	2023-09-18T19:36:54.6213314	Mineloween Mod/Tags for minecraft:block
 88474be33ee100a9f1934420f052454ee876d2d4 data\minecraft\tags\blocks\logs.json
 0b5cf062ce0d69741ac57407583cbe060cf11cb5 data\minecraft\tags\blocks\slabs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_5.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_6.json
+bbc8009f9fa6bf88b6450ba5bc6f5f72d3dad6c6 data\minecraft\tags\blocks\logs_that_burn.json
+f4b9b33b01334e1fd515b3bf024cbd71a7ad832e data\minecraft\tags\blocks\planks.json
+4cc0da4e011eb4807991448ee6460f2a39388aa2 data\minecraft\tags\blocks\needs_diamond_tool.json
 b033c12a363649fad3e85f60e02d2a392514c5ec data\minecraft\tags\blocks\walls.json
 749c545834bc9f78862aec955543b5b24fbff325 data\minecraft\tags\blocks\saplings.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_5.json
 ca838aab8169deca06ffebe2cbf036963ccb4325 data\minecraft\tags\blocks\mineable\pickaxe.json
 51fa30fb6a976fadaf621aeb84407e9fab2fdb25 data\minecraft\tags\blocks\stairs.json
 d27d57d5ff054f41949bd77b86c6a2a4bde610eb data\minecraft\tags\blocks\needs_iron_tool.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\need_tool_level_6.json
-bbc8009f9fa6bf88b6450ba5bc6f5f72d3dad6c6 data\minecraft\tags\blocks\logs_that_burn.json
 e941ff662545f29c0c36c02f8b2a0bcbdf6639bc data\minecraft\tags\blocks\mineable\axe.json
-f4b9b33b01334e1fd515b3bf024cbd71a7ad832e data\minecraft\tags\blocks\planks.json
 9634dd3fb2387ab592056f755420dcc5d136fb52 data\minecraft\tags\blocks\fence_gates.json
-4cc0da4e011eb4807991448ee6460f2a39388aa2 data\minecraft\tags\blocks\needs_diamond_tool.json
