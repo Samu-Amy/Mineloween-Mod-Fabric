@@ -13,10 +13,10 @@ import net.samu.mineloween.entity.custom.OwlEntity;
 
 public class ModEntities {
     public static final EntityType<OwlEntity> OWL = Registry.register(Registries.ENTITY_TYPE, new Identifier(MineloweenMod.MOD_ID, "owl"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, OwlEntity::new).dimensions(EntityDimensions.fixed(0.75f, 0.75f)).build());
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, OwlEntity::new).dimensions(EntityDimensions.fixed(0.65f, 0.8f)).build());
 
     public static final EntityType<GhostEntity> GHOST = Registry.register(Registries.ENTITY_TYPE, new Identifier(MineloweenMod.MOD_ID, "ghost"),
-            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, GhostEntity::new).dimensions(EntityDimensions.fixed(0.9f, 1.9f)).build());
+            FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, GhostEntity::new).dimensions(EntityDimensions.fixed(0.8f, 1.9f)).build());
     public static void registerModEntities() {
         MineloweenMod.LOGGER.info("Registering Mod Entities for " + MineloweenMod.MOD_ID);
     }

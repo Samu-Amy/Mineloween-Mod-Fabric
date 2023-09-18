@@ -6,6 +6,9 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.data.DataTracker;
+import net.minecraft.entity.data.TrackedData;
+import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.passive.PassiveEntity;
@@ -13,11 +16,16 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import net.samu.mineloween.entity.ModEntities;
+import net.samu.mineloween.entity.ai.GhostAttackGoal;
 import org.jetbrains.annotations.Nullable;
 
 public class GhostEntity extends AnimalEntity {
+    private static final TrackedData<Boolean> ATTACKING = DataTracker.registerData(GhostEntity.class, TrackedDataHandlerRegistry.BOOLEAN);
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+
+    public final AnimationState attackAnimationState = new AnimationState();
+    public int attackAnimationTimeout = 0;
 
     public GhostEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -28,6 +36,7 @@ public class GhostEntity extends AnimalEntity {
         this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
         this.goalSelector.add(0, new LookAroundGoal(this));
         this.goalSelector.add(1, new FollowParentGoal(this, 1.1D));
+        this.goalSelector.add(1, new GhostAttackGoal(this, 1.1D, true));
         this.goalSelector.add(1, new WanderAroundGoal(this, 1.0D));
         this.goalSelector.add(3, new SwimGoal(this));
 
@@ -40,6 +49,17 @@ public class GhostEntity extends AnimalEntity {
             this.idleAnimationState.start(this.age);
         } else {
             --this.idleAnimationTimeout;
+        }
+
+        if (this.isAttacking() && attackAnimationTimeout <= 0) {
+            this.attackAnimationTimeout = 40;
+            attackAnimationState.start(this.age);
+        } else {
+            --this.attackAnimationTimeout;
+        }
+
+        if (!this.isAttacking()) {
+            attackAnimationState.stop();
         }
     }
 
@@ -74,5 +94,18 @@ public class GhostEntity extends AnimalEntity {
     @Override
     public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
         return ModEntities.GHOST.create(world);
+    }
+
+    @Override
+    protected void initDataTracker() {
+        super.initDataTracker();
+        this.dataTracker.startTracking(ATTACKING, false);
+    }
+    public void setAttacking(boolean attacking) {
+        this.dataTracker.set(ATTACKING, attacking);
+    }
+
+    public boolean isAttacking() {
+        return this.dataTracker.get(ATTACKING);
     }
 }
