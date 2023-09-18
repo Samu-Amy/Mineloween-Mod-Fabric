@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-17T20:41:27.4453306	Mineloween Mod/Recipes
+// 1.20.1	2023-09-18T17:33:20.7149429	Mineloween Mod/Recipes
 6376aecdbc18656dc8a8a9a8a7a9330ff965c17e data\mineloween\recipes\raw_gem_from_blasting_deepslate_gem_ore.json
 6cb75451699874a077d8c5c5a21f29543473a7ed data\mineloween\recipes\gem_powder_from_gemstone_grinder.json
 bd61f08a68f75ef9b06d5a1b133b556a6c64e7a1 data\mineloween\recipes\ash_wood_slab.json
@@ -12,14 +12,14 @@ a7172b023de7b22fc9f13bd63ab611325161d556 data\mineloween\advancements\recipes\mi
 12b608e549ab84fb36714d4637c744f7c3fef08d data\mineloween\advancements\recipes\misc\gemmed_cobblestone_wall.json
 f7b95ab12763de41ff7a3b4ffa65e55d1a7bcbfe data\mineloween\advancements\recipes\gold_powder.json
 641ed612dab8412cbf640bcfff233c755532b3b6 data\mineloween\advancements\recipes\misc\ash_wood_slab.json
-532e55d6a02388dadb45b175723f325689cb4347 data\mineloween\advancements\recipes\misc\gold_coin.json
 b3bc82654ca1e8cd01557261b4fa0d06993002de data\mineloween\advancements\recipes\misc\gem.json
+532e55d6a02388dadb45b175723f325689cb4347 data\mineloween\advancements\recipes\misc\gold_coin.json
 c3e721e9e1c5e7c5343ecfd0200a4122d3669814 data\mineloween\advancements\recipes\misc\ash_wood_stairs.json
 31ab062f818d236f940bcdeb07328c51b7d3274e data\mineloween\advancements\recipes\misc\gem_chestplate.json
 ac01e5003149aa3e7f41cf373efe629edd24c26b data\mineloween\recipes\gem_chestplate.json
 72ab742e20c294858f5acdc971b7535bc8cc1d01 data\mineloween\advancements\recipes\misc\gem_sword.json
-cf9b6464dc7665efedb0486fbd562a5772fb1324 data\mineloween\recipes\gemmed_cobblestone_stairs.json
 c1654b6dfcbcb23e81918fa20b29093a49878562 data\mineloween\recipes\gemmed_cobblestone_slab.json
+cf9b6464dc7665efedb0486fbd562a5772fb1324 data\mineloween\recipes\gemmed_cobblestone_stairs.json
 62093f8452b79f9917a1a80acfaad0cec012b354 data\mineloween\advancements\recipes\misc\ash_planks.json
 d70fd636f6a6547ca969191f877c43a6f4ec342e data\mineloween\recipes\gem_pickaxe.json
 18271f0e34c528ead4ccf782471e595b1cb2f50c data\mineloween\recipes\raw_gem_from_smelting_deepslate_gem_ore.json
@@ -53,5 +53,5 @@ e7f1cf1310865a4ee89c8d951d5234871ce20d47 data\mineloween\recipes\gem_helmet.json
 6f6a41f373041dbfb9fb3ef502cfa3cb78f916a9 data\mineloween\recipes\gem_sword.json
 5ff681f2f0e7575fa7a17bf918a7b18054f8bb47 data\mineloween\advancements\recipes\misc\gem_shovel.json
 4aaf971b8025eb143980ae2d11ffec7db94fba19 data\mineloween\advancements\recipes\misc\gem_leggings.json
-9adfcf2d4e1184407ec40806bd2e52f2d53afd63 data\mineloween\recipes\ash_planks.json
 de5118d75388b7854fe4c6711daf70cf488e038f data\mineloween\recipes\gold_coin.json
+9adfcf2d4e1184407ec40806bd2e52f2d53afd63 data\mineloween\recipes\ash_planks.json

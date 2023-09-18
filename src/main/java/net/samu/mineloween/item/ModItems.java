@@ -34,6 +34,8 @@ public class ModItems {
     public static final Item GEM_SHOVEL = registerItem("gem_shovel", new ShovelItem(ModToolMaterial.GEM, 0, -3f, new FabricItemSettings()));
     public static final Item GEM_HOE = registerItem("gem_hoe", new HoeItem(ModToolMaterial.GEM, -6, 0f, new FabricItemSettings()));
 
+    //TODO: fai versione magica dei tool di gemma (tier magic_gem o dark (più alto del tier gemma, per poter rompere determinati blocchi) e con stessi valori di quelli di gemma, ma con proprietà speciali
+
 
     // -------- Armor --------
     public static final Item GEM_HELMET = registerItem("gem_helmet", new ArmorItem(ModArmorMaterials.GEM, ArmorItem.Type.HELMET, new FabricItemSettings()));

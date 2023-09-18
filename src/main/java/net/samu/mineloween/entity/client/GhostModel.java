@@ -7,7 +7,6 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.math.MathHelper;
 import net.samu.mineloween.entity.animations.ModAnimations;
 import net.samu.mineloween.entity.custom.GhostEntity;
-import net.samu.mineloween.entity.custom.OwlEntity;
 
 public class GhostModel<T extends GhostEntity> extends SinglePartEntityModel<T> {
     private final ModelPart ghost;
@@ -88,6 +87,7 @@ public class GhostModel<T extends GhostEntity> extends SinglePartEntityModel<T> 
         this.getPart().traverse().forEach(ModelPart::resetTransform);
         this.setHeadAngles(entity, netHeadYaw, headPitch, ageInTicks);
 
+        this.animateMovement(ModAnimations.GHOST_IDLE, limbSwing, limbSwingAmount, 2f, 2.5f);
         this.updateAnimation(entity.idleAnimationState, ModAnimations.GHOST_IDLE, ageInTicks, 1f);
     }
 

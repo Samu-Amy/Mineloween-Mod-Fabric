@@ -40,15 +40,15 @@ public class OwlEntity extends AnimalEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new SwimGoal(this));
-        this.goalSelector.add(1, new EscapeDangerGoal(this, 1.25));
-        this.goalSelector.add(1, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.add(1, new FollowParentGoal(this, 1.10));
+        this.goalSelector.add(0, new EscapeDangerGoal(this, 1.25));
+        this.goalSelector.add(0, new FollowParentGoal(this, 1.10));
+        this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.add(1, new FollowMobGoal(this, 1.0, 3.0F, 7.0F));
+        this.goalSelector.add(1, new FlyOntoTreeGoal(this, 1.0));
 //        this.goalSelector.add(2, new SitGoal(this));
 //        this.goalSelector.add(2, new FollowOwnerGoal(this, 1.0, 5.0F, 1.0F, true));
-        this.goalSelector.add(2, new FlyOntoTreeGoal(this, 1.0));
 //        this.goalSelector.add(3, new SitOnOwnerShoulderGoal(this));
-        this.goalSelector.add(3, new FollowMobGoal(this, 1.0, 3.0F, 7.0F));
+        this.goalSelector.add(3, new SwimGoal(this));
 
         this.targetSelector.add(1, new RevengeGoal(this));
     }

@@ -25,13 +25,13 @@ public class GhostEntity extends AnimalEntity {
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(0, new SwimGoal(this));
+        this.goalSelector.add(0, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
+        this.goalSelector.add(0, new LookAroundGoal(this));
         this.goalSelector.add(1, new FollowParentGoal(this, 1.1D));
-        this.goalSelector.add(2, new WanderAroundGoal(this, 1.0D));
-        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 4.0F));
-        this.goalSelector.add(3, new LookAroundGoal(this));
+        this.goalSelector.add(1, new WanderAroundGoal(this, 1.0D));
+        this.goalSelector.add(3, new SwimGoal(this));
 
-        this.targetSelector.add(4, new RevengeGoal(this));
+        this.targetSelector.add(0, new RevengeGoal(this));
     }
 
     private void setupAnimationStates() {
@@ -41,11 +41,6 @@ public class GhostEntity extends AnimalEntity {
         } else {
             --this.idleAnimationTimeout;
         }
-    }
-
-    @Override
-    public boolean shouldRenderName() {
-        return false;
     }
 
     protected void updateLimbs(float v) {
