@@ -75,12 +75,10 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColor(0x7f03fc)
-                        .foliageColor(0xd203fc)
-                        .fogColor(0x22a1e6).build())
+                        .waterColor(0x3F76E4)
+                        .waterFogColor(0x050533)
+                        .skyColor(0x79A6FF)
+                        .fogColor(0xC0D8FF).build())
                 .build();
     }
 
@@ -100,7 +98,6 @@ public class ModBiomes {
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
 
-        Object ModSounds;
         return new Biome.Builder()
                 .precipitation(true)
                 .downfall(0.2f)
@@ -108,12 +105,10 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x2d7621)
-                        .grassColor(0x7f03fc)
-                        .foliageColor(0xd203fc)
-                        .fogColor(0x1a4163)
+                        .waterColor(0x406eca)
+                        .waterFogColor(0x040436)
+                        .skyColor(0x7193e7)
+                        .fogColor(0x889adf)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }

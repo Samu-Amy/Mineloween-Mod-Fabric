@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
 import net.samu.mineloween.world.ModPlacedFeatures;
+import net.samu.mineloween.world.biome.ModBiomes;
 
 public class ModFlowerGeneration {
     public static void generateFlowers() {

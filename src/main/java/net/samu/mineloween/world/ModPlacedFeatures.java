@@ -1,5 +1,6 @@
 package net.samu.mineloween.world;
 
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -18,6 +19,12 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ASH_1_FOREST_PLACED_KEY = registerKey("ash_1_forest_placed");
     public static final RegistryKey<PlacedFeature> ASH_2_PLAINS_PLACED_KEY = registerKey("ash_2_plains_placed");
     public static final RegistryKey<PlacedFeature> ASH_2_FOREST_PLACED_KEY = registerKey("ash_2_forest_placed");
+    public static final RegistryKey<PlacedFeature> ASH_1_ASH_FOREST_PLACED_KEY = registerKey("ash_1_ash_forest_placed");
+    public static final RegistryKey<PlacedFeature> ASH_2_ASH_FOREST_PLACED_KEY = registerKey("ash_2_ash_forest_placed");
+    public static final RegistryKey<PlacedFeature> DEAD_TREE_1_PLACED_KEY = registerKey("dead_tree_1_placed");
+    public static final RegistryKey<PlacedFeature> DEAD_TREE_2_PLACED_KEY = registerKey("dead_tree_2_placed");
+    public static final RegistryKey<PlacedFeature> DEAD_TREE_3_PLACED_KEY = registerKey("dead_tree_3_placed");
+    public static final RegistryKey<PlacedFeature> DEAD_TREE_4_PLACED_KEY = registerKey("dead_tree_4_placed");
     public static final RegistryKey<PlacedFeature> GEM_ORE_PLACED_KEY = registerKey("gem_ore_placed");
     public static final RegistryKey<PlacedFeature> LAVANDA_PLACED_KEY = registerKey("lavanda_placed");
     public static final RegistryKey<PlacedFeature> MALVA_FLOWER_PLACED_KEY = registerKey("malva_flower_placed");
@@ -45,6 +52,32 @@ public class ModPlacedFeatures {
         register(context, ASH_2_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ASH_KEY_2),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), ModBlocks.ASH_SAPLING));
+
+        // ----- Ash Forest
+        register(context, ASH_1_ASH_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ASH_KEY_1),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(3, 0.1f, 3), ModBlocks.ASH_SAPLING));
+
+        register(context, ASH_2_ASH_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ASH_KEY_2),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(3, 0.1f, 3), ModBlocks.ASH_SAPLING));
+
+        // ----- Dead Forest
+        register(context, DEAD_TREE_1_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_TREE_KEY_1),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 3), Blocks.OAK_SAPLING));
+
+        register(context, DEAD_TREE_2_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_TREE_KEY_2),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 3), Blocks.OAK_SAPLING));
+
+        register(context, DEAD_TREE_3_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_TREE_KEY_3),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 3), ModBlocks.ASH_SAPLING));
+
+        register(context, DEAD_TREE_4_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_TREE_KEY_4),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 3), ModBlocks.ASH_SAPLING));
 
         // ----- FLOWERS -----
         register(context, LAVANDA_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LAVANDA_KEY),
