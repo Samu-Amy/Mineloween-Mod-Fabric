@@ -14,13 +14,14 @@ public class ModMaterialRules {
         MaterialRules.MaterialCondition isAtOrAboveWaterLevel = MaterialRules.water(-1, 0);
 
         MaterialRules.MaterialRule grassSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, GRASS_BLOCK), DIRT);
+        MaterialRules.MaterialRule coarseDirtSurface = MaterialRules.sequence(MaterialRules.condition(isAtOrAboveWaterLevel, COARSE_DIRT), DIRT);
 
         return MaterialRules.sequence(
-                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.DEAD_FOREST),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GRASS_BLOCK)),
+                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.ASH_FOREST),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)),
 
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.DEAD_FOREST),
-                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, COARSE_DIRT)),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, coarseDirtSurface)),
 
 
                 // Default to a grass and dirt surface

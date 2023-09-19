@@ -57,16 +57,18 @@ public class ModBiomes {
                         context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
 
         globalOverworldGeneration(biomeBuilder);
-        DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
         DefaultBiomeFeatures.addExtraGoldOre(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
         DefaultBiomeFeatures.addForestFlowers(biomeBuilder);
         DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+        DefaultBiomeFeatures.addDefaultFlowers(biomeBuilder);
+        DefaultBiomeFeatures.addForestGrass(biomeBuilder);
 
         DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
         DefaultBiomeFeatures.addDefaultVegetation(biomeBuilder);
+        DefaultBiomeFeatures.addSweetBerryBushes(biomeBuilder);
 
         return new Biome.Builder()
                 .precipitation(true)
@@ -95,8 +97,10 @@ public class ModBiomes {
         globalOverworldGeneration(biomeBuilder);
         DefaultBiomeFeatures.addMossyRocks(biomeBuilder);
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
+//        DefaultBiomeFeatures.addFossils(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_PLAINS);
+        DefaultBiomeFeatures.addBadlandsVegetation(biomeBuilder);
 
         return new Biome.Builder()
                 .precipitation(true)
@@ -105,10 +109,10 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0x406eca)
-                        .waterFogColor(0x040436)
-                        .skyColor(0x7193e7)
-                        .fogColor(0x889adf)
+                        .waterColor(0x1f258f)
+                        .waterFogColor(0x05032e)
+                        .skyColor(0x40476e)
+                        .fogColor(0x394475)
                         .moodSound(BiomeMoodSound.CAVE).build())
                 .build();
     }

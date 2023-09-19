@@ -1,4 +1,4 @@
-// 1.20.1	2023-09-19T10:01:01.5232302	Mineloween Mod/Block Loot Tables
+// 1.20.1	2023-09-19T19:59:26.3356923	Mineloween Mod/Block Loot Tables
 0c085ae430f0189b238f7ed5a7c7eefa72f54f3b data\mineloween\loot_tables\blocks\ash_wood.json
 9c94f9406ce4aa6ce69cd07b479dd69ad5fd6784 data\mineloween\loot_tables\blocks\ash_planks.json
 2e493bfed749ede9e30d8a09bdb612dedfca3bb7 data\mineloween\loot_tables\blocks\gemmed_cobblestone.json
@@ -18,5 +18,5 @@ b9f841641e3d9dda338f94de887576c91eae027e data\mineloween\loot_tables\blocks\malv
 c223c40e839555058c0a759cdd90bb2a8e8f9098 data\mineloween\loot_tables\blocks\gemmed_cobblestone_wall.json
 632133fcaea57757fb0e80b21e5815a9a612d96f data\mineloween\loot_tables\blocks\ash_wood_fence_gate.json
 0d1d280f98dbe1f1eafca4842c104f73b32a84b0 data\mineloween\loot_tables\blocks\ash_log.json
-dba0a02df8a1fdb07f5453971fe45f5d3a8cac3e data\mineloween\loot_tables\blocks\stripped_ash_wood.json
 79bf9f0d392e9ff4fa68a46fd736d171fe5ecca8 data\mineloween\loot_tables\blocks\ash_leaves.json
+dba0a02df8a1fdb07f5453971fe45f5d3a8cac3e data\mineloween\loot_tables\blocks\stripped_ash_wood.json

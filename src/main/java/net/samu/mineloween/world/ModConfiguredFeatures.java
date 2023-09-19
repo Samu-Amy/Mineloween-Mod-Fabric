@@ -9,11 +9,13 @@ import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
 import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.samu.mineloween.MineloweenMod;
@@ -24,10 +26,15 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ASH_KEY_1 = registerKey("ash_1");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ASH_KEY_2 = registerKey("ash_2");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_TREE_KEY_1 = registerKey("dead_tree_1");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_TREE_KEY_2 = registerKey("dead_tree_2");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_TREE_KEY_3 = registerKey("dead_tree_3");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_TREE_KEY_4 = registerKey("dead_tree_4");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_OAK_TREE_KEY_1 = registerKey("dead_oak_tree_1");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_OAK_TREE_KEY_2 = registerKey("dead_oak_tree_2");
+//    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_OAK_TREE_KEY_3 = registerKey("dead_oak_tree_3");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_DARK_OAK_TREE_KEY_1 = registerKey("dead_tree_1");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_DARK_OAK_TREE_KEY_2 = registerKey("dead_tree_2");
+//    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_DARK_OAK_TREE_KEY_3 = registerKey("dead_tree_3");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_ASH_TREE_KEY_1 = registerKey("dead_ash_tree_1");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_ASH_TREE_KEY_2 = registerKey("dead_ash_tree_2");
+//    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_ASH_TREE_KEY_3 = registerKey("dead_ash_tree_3");
     public static final RegistryKey<ConfiguredFeature<?, ?>> GEM_ORE_KEY = registerKey("gem_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LAVANDA_KEY = registerKey("lavanda");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MALVA_FLOWER_KEY = registerKey("malva_flower");
@@ -54,23 +61,38 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
-        register(context, DEAD_TREE_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(Blocks.OAK_LOG), new StraightTrunkPlacer(5, 5, 2),
+        register(context, DEAD_OAK_TREE_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.OAK_LOG), new StraightTrunkPlacer(8, 6, 4),
+                BlockStateProvider.of(Blocks.OAK_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+        register(context, DEAD_OAK_TREE_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.OAK_LOG), new ForkingTrunkPlacer(8, 6, 4),
+                BlockStateProvider.of(Blocks.OAK_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+//        register(context, DEAD_OAK_TREE_KEY_3, Feature.TREE, new TreeFeatureConfig.Builder(
+//                BlockStateProvider.of(Blocks.OAK_LOG), new BendingTrunkPlacer(8, 6, 4, 5, IntProvider.createValidatingCodec(2, 4)),
+//                BlockStateProvider.of(Blocks.OAK_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
+//                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+        register(context, DEAD_DARK_OAK_TREE_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.DARK_OAK_LOG), new StraightTrunkPlacer(8, 6, 4),
+                BlockStateProvider.of(Blocks.DARK_OAK_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+        register(context, DEAD_DARK_OAK_TREE_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(Blocks.DARK_OAK_LOG), new ForkingTrunkPlacer(8, 6, 4),
+                BlockStateProvider.of(Blocks.DARK_OAK_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+        register(context, DEAD_ASH_TREE_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new StraightTrunkPlacer(8, 6 ,4),
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
-        register(context, DEAD_TREE_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(Blocks.OAK_LOG), new ForkingTrunkPlacer(5, 5, 2),
-                BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
-                new TwoLayersFeatureSize(1, 1, 2)).build());
-
-        register(context, DEAD_TREE_KEY_3, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.ASH_LOG), new StraightTrunkPlacer(5, 5, 2),
-                BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
-                new TwoLayersFeatureSize(1, 1, 2)).build());
-
-        register(context, DEAD_TREE_KEY_4, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(5, 5, 2),
+        register(context, DEAD_ASH_TREE_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(8, 6, 4),
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(0), ConstantIntProvider.create(0), 0),
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 

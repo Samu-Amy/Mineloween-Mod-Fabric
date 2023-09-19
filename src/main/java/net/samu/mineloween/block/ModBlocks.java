@@ -49,6 +49,7 @@ public class ModBlocks {
     public static final Block POTTED_MALVA_FLOWER = registerBlockWithoutBlockItem("potted_malva_flower", new FlowerPotBlock(MALVA_FLOWER, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET)));
     public static final Block LAVANDA = registerBlock("lavanda", new FlowerBlock(StatusEffects.RESISTANCE, 5, FabricBlockSettings.copyOf(Blocks.AZURE_BLUET)));
     public static final Block POTTED_LAVANDA = registerBlockWithoutBlockItem("potted_lavanda", new FlowerPotBlock(LAVANDA, FabricBlockSettings.copyOf(Blocks.POTTED_AZURE_BLUET)));
+//    public static final Block BELLADONNA_BUSH = registerBlockWithoutBlockItem("belladonna_bush", new SweetBerryBushBlock(FabricBlockSettings.copyOf(Blocks.SWEET_BERRY_BUSH)));
 
 
     private static Block registerBlock(String name, Block block) {
