@@ -21,6 +21,10 @@ public class ModVillagers {
     public static final PointOfInterestType HERBORISM_POI = registerPoi("herborismpoi", ModBlocks.MALVA_CROP); //TODO: cambia in mortaio e pestello (o altro legato all'erboristeria)
     public static final VillagerProfession HERBORIST = registerProfession("herborist", HERBORISM_POI_KEY);
 
+    public static final RegistryKey<PointOfInterestType> GEM_WORKER_POI_KEY = registerPoiKey("gemworkerpoi");
+    public static final PointOfInterestType GEM_WORKER_POI = registerPoi("gemworkerpoi", ModBlocks.GEMSTONE_GRINDER);
+    public static final VillagerProfession GEM_WORKER = registerProfession("gemworker", GEM_WORKER_POI_KEY);
+
 
     private static VillagerProfession registerProfession(String name, RegistryKey<PointOfInterestType> type) {
         return Registry.register(Registries.VILLAGER_PROFESSION, new Identifier(MineloweenMod.MOD_ID, name),

@@ -10,7 +10,7 @@ import terrablender.api.TerraBlenderApi;
 public class ModTerraBlenderAPI implements TerraBlenderApi {
     @Override
     public void onTerraBlenderInitialized() {
-        Regions.register(new ModOverwolrdRegion(new Identifier(MineloweenMod.MOD_ID, "overworld"), 5)); // Più alto è il peso e più biomi vanilla vengono rimpiazzati dai custom
+        Regions.register(new ModOverwolrdRegion(new Identifier(MineloweenMod.MOD_ID, "overworld"), 4)); // Più alto è il peso e più biomi vanilla vengono rimpiazzati dai custom
 
         SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MineloweenMod.MOD_ID, ModMaterialRules.makeRules());
     }

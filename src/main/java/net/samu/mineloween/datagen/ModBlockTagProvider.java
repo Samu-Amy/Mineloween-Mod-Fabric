@@ -60,17 +60,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         // ----- BLOCKS TAGS -----
-        getOrCreateTagBuilder(BlockTags.LOGS)
-                .add(ModBlocks.ASH_LOG, ModBlocks.ASH_WOOD, ModBlocks.STRIPPED_ASH_LOG, ModBlocks.STRIPPED_ASH_WOOD);
-
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.ASH_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.STAIRS)
-                .add(ModBlocks.GEMMED_COBBLESTONE_STAIRS, ModBlocks.ASH_WOOD_STAIRS);
+                .add(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
+                .add(ModBlocks.ASH_WOOD_STAIRS);
 
         getOrCreateTagBuilder(BlockTags.SLABS)
-                .add(ModBlocks.GEMMED_COBBLESTONE_SLAB, ModBlocks.ASH_WOOD_SLAB);
+                .add(ModBlocks.GEMMED_COBBLESTONE_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.ASH_WOOD_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.GEMMED_COBBLESTONE_WALL);

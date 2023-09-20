@@ -20,5 +20,8 @@ public class ModPOITagProvider extends TagProvider<PointOfInterestType> {
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
         this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
                 .addOptional(new Identifier(MineloweenMod.MOD_ID, "herborismpoi"));
+
+        this.getOrCreateTagBuilder(PointOfInterestTypeTags.ACQUIRABLE_JOB_SITE)
+                .addOptional(new Identifier(MineloweenMod.MOD_ID, "gemworkerpoi"));
     }
 }

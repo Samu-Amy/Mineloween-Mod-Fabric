@@ -13,12 +13,12 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
+    "has_gemmed_cobblestone_wall": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:stick"
+              "mineloween:gemmed_cobblestone_wall"
             ]
           }
         ]
@@ -35,7 +35,7 @@
   "requirements": [
     [
       "has_gemmed_cobblestone",
-      "has_stick",
+      "has_gemmed_cobblestone_wall",
       "has_the_recipe"
     ]
   ],

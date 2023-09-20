@@ -4,6 +4,10 @@
     {
       "id": "mineloween:herborismpoi",
       "required": false
+    },
+    {
+      "id": "mineloween:gemworkerpoi",
+      "required": false
     }
   ]
 }

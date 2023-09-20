@@ -34,7 +34,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE);
 
                         entries.add(ModBlocks.GEMSTONE_GRINDER);
-                        entries.add(ModBlocks.DECORATIVE_BOOKSHELF);
+//                        entries.add(ModBlocks.DECORATIVE_BOOKSHELF);
 
                         entries.add(ModItems.GOLD_POWDER);
                         entries.add(ModItems.GOLD_COIN);

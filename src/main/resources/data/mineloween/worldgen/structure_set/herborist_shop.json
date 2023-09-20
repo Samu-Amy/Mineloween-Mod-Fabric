@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "mineloween:herborist_shop",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1642266474,
+
+    "spacing": 120,
+
+    "separation": 60,
+
+    "type": "minecraft:random_spread"
+  }
+}

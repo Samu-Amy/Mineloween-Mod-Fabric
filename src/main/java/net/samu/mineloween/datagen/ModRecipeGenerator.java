@@ -110,12 +110,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GEMMED_COBBLESTONE_WALL)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE)
-                .pattern("SCS")
-                .pattern("SCS")
+                .pattern("WCW")
                 .input('C', ModBlocks.GEMMED_COBBLESTONE)
-                .input('S', Items.STICK)
+                .input('W', ModBlocks.GEMMED_COBBLESTONE_WALL)
                 .criterion(hasItem(ModBlocks.GEMMED_COBBLESTONE), conditionsFromItem(ModBlocks.GEMMED_COBBLESTONE))
-                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .criterion(hasItem(ModBlocks.GEMMED_COBBLESTONE_WALL), conditionsFromItem(ModBlocks.GEMMED_COBBLESTONE_WALL))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.GEMMED_COBBLESTONE_FENCE_GATE)));
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.ASH_PLANKS, 4)

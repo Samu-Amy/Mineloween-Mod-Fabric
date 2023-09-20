@@ -67,27 +67,27 @@ public class ModPlacedFeatures {
         // ----- Dead Forest
         register(context, DEAD_OAK_TREE_1_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_OAK_TREE_KEY_1),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(4, 0.1f, 3), Blocks.OAK_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 1), Blocks.OAK_SAPLING));
 
         register(context, DEAD_OAK_TREE_2_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_OAK_TREE_KEY_2),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(4, 0.1f, 3), Blocks.OAK_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 1), Blocks.OAK_SAPLING));
 
         register(context, DEAD_DARK_OAK_TREE_1_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_DARK_OAK_TREE_KEY_1),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(4, 0.1f, 2), Blocks.OAK_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 1), Blocks.OAK_SAPLING));
 
         register(context, DEAD_DARK_OAK_TREE_2_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_DARK_OAK_TREE_KEY_2),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(4, 0.1f, 2), Blocks.OAK_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(5, 0.1f, 1), Blocks.OAK_SAPLING));
 
         register(context, DEAD_ASH_TREE_1_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_ASH_TREE_KEY_1),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(3, 0.1f, 2), ModBlocks.ASH_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(1, 0.1f, 1), ModBlocks.ASH_SAPLING));
 
         register(context, DEAD_ASH_TREE_2_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_ASH_TREE_KEY_2),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(3, 0.1f, 2), ModBlocks.ASH_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(1, 0.1f, 1), ModBlocks.ASH_SAPLING));
 
         // ----- FLOWERS -----
         register(context, LAVANDA_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LAVANDA_KEY),

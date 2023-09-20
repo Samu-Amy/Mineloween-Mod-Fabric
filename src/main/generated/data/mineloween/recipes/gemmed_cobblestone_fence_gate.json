@@ -5,13 +5,12 @@
     "C": {
       "item": "mineloween:gemmed_cobblestone"
     },
-    "S": {
-      "item": "minecraft:stick"
+    "W": {
+      "item": "mineloween:gemmed_cobblestone_wall"
     }
   },
   "pattern": [
-    "SCS",
-    "SCS"
+    "WCW"
   ],
   "result": {
     "item": "mineloween:gemmed_cobblestone_fence_gate"

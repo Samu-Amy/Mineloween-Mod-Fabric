@@ -63,175 +63,243 @@ public class ModRegistries {
 
     private static void registerCustomTrades() {
         // ----- GOLD TRADES -----
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.ARMORER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.ARMORER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CARTOGRAPHER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CARTOGRAPHER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CLERIC, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CLERIC, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FISHERMAN, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FISHERMAN, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LEATHERWORKER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LEATHERWORKER, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.SHEPHERD, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.SHEPHERD, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
-        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
-            factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
-        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FARMER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.ARMORER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.ARMORER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.BUTCHER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CARTOGRAPHER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CARTOGRAPHER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CLERIC, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.CLERIC, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FISHERMAN, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FISHERMAN, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.FLETCHER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LEATHERWORKER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LEATHERWORKER, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.LIBRARIAN, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.SHEPHERD, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.SHEPHERD, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.TOOLSMITH, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(VillagerProfession.WEAPONSMITH, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//
+//        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_POWDER, 14),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
+//        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
+//            factories.add((entity, random) -> new TradeOffer(
+//                    new ItemStack(ModItems.GOLD_COIN, 3),
+//                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
+//        });
 
         // ----- HERBORIST -----
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 1),
+                            new ItemStack(ModBlocks.LAVANDA, 3), 10, 4, 0.02f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
-                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(ModItems.GOLD_COIN, 3),
                     new ItemStack(ModBlocks.LAVANDA, 3), 10, 4, 0.02f));
         });
+
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 1),
                     new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 3, 0.02f));
         });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 3),
+                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 3, 0.02f));
+        });
+
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 2),
                     new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 6, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 3),
+                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 6, 0.04f));
+        });
+
+        // ----- GEM WORKER -----
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_POWDER, 14),
+                    new ItemStack(Items.EMERALD, 1), 50, 2, 0.01f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 3),
+                    new ItemStack(Items.EMERALD, 1), 50, 2, 0.01f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_POWDER, 16),
+                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(ModItems.GOLD_COIN, 4), 20, 3, 0.02f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.RAW_GEM, 2),
+                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(ModItems.GEM_POWDER, 4), 10, 4, 0.02f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.RAW_GEM, 2),
+                    new ItemStack(ModItems.GOLD_COIN, 3),
+                    new ItemStack(ModItems.GEM_POWDER, 4), 10, 4, 0.02f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.GOLD_INGOT, 2),
+                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(ModItems.GOLD_POWDER, 4), 10, 4, 0.02f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.GOLD_INGOT, 2),
+                    new ItemStack(ModItems.GOLD_COIN, 3),
+                    new ItemStack(ModItems.GOLD_POWDER, 4), 10, 4, 0.02f));
         });
     }
 }
