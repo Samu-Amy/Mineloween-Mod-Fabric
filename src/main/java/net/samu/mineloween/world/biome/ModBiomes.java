@@ -86,7 +86,8 @@ public class ModBiomes {
 
     public static Biome deadForest(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 2, 3, 5));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 3, 2, 5));
+        spawnBuilder.spawn(SpawnGroup.CREATURE, new SpawnSettings.SpawnEntry(ModEntities.GHOST_VILLAGER, 1, 1, 3));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
 

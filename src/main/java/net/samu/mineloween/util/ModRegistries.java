@@ -13,6 +13,7 @@ import net.minecraft.village.VillagerProfession;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.entity.ModEntities;
 import net.samu.mineloween.entity.custom.GhostEntity;
+import net.samu.mineloween.entity.custom.GhostVillagerEntity;
 import net.samu.mineloween.entity.custom.OwlEntity;
 import net.samu.mineloween.item.ModItems;
 import net.samu.mineloween.villager.ModVillagers;
@@ -36,6 +37,7 @@ public class ModRegistries {
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.OWL, OwlEntity.createOwlAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.GHOST, GhostEntity.createGhostAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.GHOST_VILLAGER, GhostVillagerEntity.createGhostVillagerAttributes());
     }
 
     private static void registerModCompostables() {

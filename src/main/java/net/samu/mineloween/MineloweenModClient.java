@@ -8,10 +8,7 @@ import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.entity.ModEntities;
-import net.samu.mineloween.entity.client.GhostModel;
-import net.samu.mineloween.entity.client.GhostRenderer;
-import net.samu.mineloween.entity.client.OwlModel;
-import net.samu.mineloween.entity.client.OwlRenderer;
+import net.samu.mineloween.entity.client.*;
 import net.samu.mineloween.entity.layer.ModModelLayers;
 import net.samu.mineloween.screen.GemstoneGrinderScreen;
 import net.samu.mineloween.screen.ModScreenHandlers;
@@ -30,8 +27,10 @@ public class MineloweenModClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.OWL, OwlModel::getTexturedModelData);
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GHOST, GhostModel::getTexturedModelData);
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GHOST_VILLAGER, GhostVillagerModel::getTexturedModelData);
 
         EntityRendererRegistry.register(ModEntities.OWL, OwlRenderer::new);
         EntityRendererRegistry.register(ModEntities.GHOST, GhostRenderer::new);
+        EntityRendererRegistry.register(ModEntities.GHOST_VILLAGER, GhostVillagerRenderer::new);
     }
 }

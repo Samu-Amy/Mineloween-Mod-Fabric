@@ -20,6 +20,7 @@ public class OwlModel<T extends OwlEntity> extends SinglePartEntityModel<T> {
     private final ModelPart head;
     private final ModelPart right_wing;
     private final ModelPart left_wing;
+
     public OwlModel(ModelPart root) {
         this.owl = root.getChild("owl");
         this.head = owl.getChild("head");

@@ -52,9 +52,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.DEEPSLATE_GEM_ORE);
 
-        getOrCreateTagBuilder(BlockTags.STAIRS)
-                .add(ModBlocks.ASH_WOOD_STAIRS);
-
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_5")));
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "need_tool_level_6")));
 
@@ -63,17 +60,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.ASH_PLANKS);
 
-        getOrCreateTagBuilder(BlockTags.STAIRS)
-                .add(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
+        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
+                .add(ModBlocks.ASH_WOOD_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_STAIRS)
                 .add(ModBlocks.ASH_WOOD_STAIRS);
 
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(ModBlocks.GEMMED_COBBLESTONE_STAIRS);
+
         getOrCreateTagBuilder(BlockTags.SLABS)
                 .add(ModBlocks.GEMMED_COBBLESTONE_SLAB);
-
-        getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
-                .add(ModBlocks.ASH_WOOD_SLAB);
 
         getOrCreateTagBuilder(BlockTags.WALLS)
                 .add(ModBlocks.GEMMED_COBBLESTONE_WALL);

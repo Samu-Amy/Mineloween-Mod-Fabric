@@ -65,8 +65,12 @@ public class ModItemGroup {
                         entries.add(ModItems.MALVA_FLOWERS);
                         entries.add(ModBlocks.LAVANDA);
 
+                        entries.add(ModItems.BANDAGE);
+                        entries.add(ModItems.HEALING_BANDAGE);
+
                         entries.add(ModItems.OWL_SPAWN_EGG);
                         entries.add(ModItems.GHOST_SPAWN_EGG);
+                        entries.add(ModItems.GHOST_VILLAGER_SPAWN_EGG);
                     }).build());
 
     public static void registerItemGroups() {

@@ -31,6 +31,9 @@
   "block.mineloween.malva_flower": "Malva Flower",
   "block.mineloween.lavanda": "Lavandula",
 
+  "item.mineloween.bandage": "Bandage",
+  "item.mineloween.healing_bandage": "Healing Bandage",
+
   "block.mineloween.gem_ore": "Gem Ore",
   "block.mineloween.deepslate_gem_ore": "Deepslate Gem Ore",
   "block.mineloween.gemmed_cobblestone": "Gemmed Cobblestone",
@@ -60,6 +63,8 @@
   "item.mineloween.owl_spawn_egg": "Owl Spawn Egg",
   "entity.mineloween.ghost": "Ghost",
   "item.mineloween.ghost_spawn_egg": "Ghost Spawn Egg",
+  "entity.mineloween.ghost_villager": "Ghost Villager",
+  "item.mineloween.ghost_villager_spawn_egg": "Ghost Villager Spawn Egg",
 
   "itemgroup.mineloween_group": "Mineloween"
 }

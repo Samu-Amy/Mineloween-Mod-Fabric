@@ -10,6 +10,7 @@ import net.samu.mineloween.entity.custom.GhostEntity;
 
 public class GhostModel<T extends GhostEntity> extends SinglePartEntityModel<T> {
     private final ModelPart ghost;
+
     public GhostModel(ModelPart root) {
         this.ghost = root.getChild("ghost");
     }

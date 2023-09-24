@@ -63,7 +63,7 @@ public class OwlEntity extends AnimalEntity {
 
     private void setupAnimationStates() {
         if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = this.random.nextInt(40) + 80;
+            this.idleAnimationTimeout = this.random.nextInt(60) + 280;
             this.idleAnimationState.start(this.age);
         } else {
             --this.idleAnimationTimeout;

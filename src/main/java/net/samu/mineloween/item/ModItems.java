@@ -59,9 +59,15 @@ public class ModItems {
     public static final Item MALVA_FLOWERS = registerItem("malva_flowers", new Item(new FabricItemSettings()));
 
 
+    // -------- Items --------
+    public static final Item BANDAGE = registerItem("bandage", new Item(new FabricItemSettings()));
+    public static final Item HEALING_BANDAGE = registerItem("healing_bandage", new Item(new FabricItemSettings()));
+
+
     // -------- Mobs --------
     public static final Item OWL_SPAWN_EGG = registerItem("owl_spawn_egg", new SpawnEggItem(ModEntities.OWL, 0xa4744c, 0x774d33, new FabricItemSettings()));
     public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg", new SpawnEggItem(ModEntities.GHOST, 0xf2f2f2, 0xffffff, new FabricItemSettings()));
+    public static final Item GHOST_VILLAGER_SPAWN_EGG = registerItem("ghost_villager_spawn_egg", new SpawnEggItem(ModEntities.GHOST_VILLAGER, 0x7ad2d1, 0x1b514f, new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

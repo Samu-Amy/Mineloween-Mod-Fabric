@@ -58,6 +58,7 @@ public class ModAnimations {
                                     Transformation.Interpolations.CUBIC),
                             new Keyframe(2.4583435f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.CUBIC))).build();
+
     public static final Animation OWL_FLY = Animation.Builder.create(0.7916766f).looping()
             .addBoneAnimation("right_wing",
                     new Transformation(Transformation.Targets.TRANSLATE,
@@ -319,5 +320,43 @@ public class ModAnimations {
                             new Keyframe(0.9583434f, AnimationHelper.createRotationalVector(-1f, 0f, 0f),
                                     Transformation.Interpolations.CUBIC),
                             new Keyframe(1.25f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC))).build();
+
+
+    public static final Animation GHOST_VILLAGER_WALK = Animation.Builder.create(1f)
+            .addBoneAnimation("right_leg",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(0.4167667f, AnimationHelper.createTranslationalVector(0f, 0.25f, 0f),
+                                    Transformation.Interpolations.CUBIC)))
+            .addBoneAnimation("right_leg",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(0.4167667f, AnimationHelper.createRotationalVector(5f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC)))
+            .addBoneAnimation("left_leg",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(0.375f, AnimationHelper.createTranslationalVector(0f, 0.25f, 0.5f),
+                                    Transformation.Interpolations.CUBIC)))
+            .addBoneAnimation("left_leg",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(0.375f, AnimationHelper.createRotationalVector(10f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC))).build();
+    public static final Animation MODEL_IDLE = Animation.Builder.create(0f).build();
+
+    public static final Animation GHOST_VILLAGER_IDLE = Animation.Builder.create(0.5f)
+            .addBoneAnimation("arms",
+                    new Transformation(Transformation.Targets.ROTATE,
+                            new Keyframe(0f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(0.25f, AnimationHelper.createRotationalVector(-5f, 0f, 0f),
+                                    Transformation.Interpolations.CUBIC),
+                            new Keyframe(0.5f, AnimationHelper.createRotationalVector(0f, 0f, 0f),
                                     Transformation.Interpolations.CUBIC))).build();
 }

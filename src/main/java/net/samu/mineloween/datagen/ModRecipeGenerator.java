@@ -73,6 +73,21 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GOLD_POWDER), conditionsFromItem(ModItems.GOLD_POWDER))
                 .offerTo(exporter, new Identifier("gold_nugget_from_gold_powder"));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BANDAGE, 2)
+                .pattern("MMM")
+                .input('M', ModItems.MALVA_FLOWERS)
+                .criterion(hasItem(ModItems.MALVA_FLOWERS), conditionsFromItem(ModItems.MALVA_FLOWERS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BANDAGE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HEALING_BANDAGE, 2) //TODO: sostituisci Ash leaves con Ash leaves essiccate e resina?
+                .pattern("LLL")
+                .pattern("MMM")
+                .input('L', ModBlocks.ASH_LEAVES)
+                .input('M', ModItems.MALVA_FLOWERS)
+                .criterion(hasItem(ModBlocks.ASH_LEAVES), conditionsFromItem(ModBlocks.ASH_LEAVES))
+                .criterion(hasItem(ModItems.MALVA_FLOWERS), conditionsFromItem(ModItems.MALVA_FLOWERS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALING_BANDAGE)));
+
 
         // -------- Blocks --------
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.GEMMED_COBBLESTONE, 4)
