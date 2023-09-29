@@ -56,7 +56,7 @@ public class ModItems {
 
 
     // -------- Nature --------
-    public static final Item LEAF = registerItem("leaf", new Item(new FabricItemSettings()));
+    public static final Item LEAVES = registerItem("leaves", new Item(new FabricItemSettings()));
     public static final Item RESIN = registerItem("resin", new Item(new FabricItemSettings()));
     public static final Item MALVA_SEEDS = registerItem("malva_seeds", new AliasedBlockItem(ModBlocks.MALVA_CROP, new FabricItemSettings()));
     public static final Item MALVA_FLOWERS = registerItem("malva_flowers", new Item(new FabricItemSettings()));

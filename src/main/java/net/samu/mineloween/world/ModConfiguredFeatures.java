@@ -26,6 +26,8 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ASH_KEY_1 = registerKey("ash_1");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ASH_KEY_2 = registerKey("ash_2");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> AUTUMNAL_ASH_KEY_1 = registerKey("autumnal_ash_1");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> AUTUMNAL_ASH_KEY_2 = registerKey("autumnal_ash_2");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_OAK_TREE_KEY_1 = registerKey("dead_oak_tree_1");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_OAK_TREE_KEY_2 = registerKey("dead_oak_tree_2");
 //    public static final RegistryKey<ConfiguredFeature<?, ?>> DEAD_OAK_TREE_KEY_3 = registerKey("dead_oak_tree_3");
@@ -59,6 +61,16 @@ public class ModConfiguredFeatures {
         register(context, ASH_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(4, 3, 2),
                 BlockStateProvider.of(ModBlocks.ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
+                new TwoLayersFeatureSize(1, 1, 2)).build());
+
+        register(context, AUTUMNAL_ASH_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(5, 4, 2),
+                BlockStateProvider.of(ModBlocks.AUTUMNAL_ASH_LEAVES), new RandomSpreadFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), ConstantIntProvider.create(3), 80),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, AUTUMNAL_ASH_KEY_2, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.ASH_LOG), new ForkingTrunkPlacer(4, 3, 2),
+                BlockStateProvider.of(ModBlocks.AUTUMNAL_ASH_LEAVES), new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(2), 2),
                 new TwoLayersFeatureSize(1, 1, 2)).build());
 
         register(context, DEAD_OAK_TREE_KEY_1, Feature.TREE, new TreeFeatureConfig.Builder(

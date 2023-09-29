@@ -3,10 +3,8 @@ package net.samu.mineloween.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.block.custom.MalvaCropBlock;
@@ -41,6 +39,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_ASH_LOG).log(ModBlocks.STRIPPED_ASH_LOG).wood(ModBlocks.STRIPPED_ASH_WOOD);
         BlockStateModelGenerator.BlockTexturePool ashWoodTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ASH_PLANKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ASH_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.AUTUMNAL_ASH_LEAVES);
         blockStateModelGenerator.registerTintableCross(ModBlocks.ASH_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         ashWoodTexturePool.stairs(ModBlocks.ASH_WOOD_STAIRS);
@@ -88,7 +87,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.CHOCOLATE, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.LEAF, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEAVES, Models.GENERATED);
         itemModelGenerator.register(ModItems.RESIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.MALVA_FLOWERS, Models.GENERATED);
 

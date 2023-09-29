@@ -57,6 +57,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         // ----- BLOCKS TAGS -----
+        getOrCreateTagBuilder(BlockTags.LEAVES)
+                .add(ModBlocks.ASH_LEAVES, ModBlocks.AUTUMNAL_ASH_LEAVES);
+
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.ASH_PLANKS);
 

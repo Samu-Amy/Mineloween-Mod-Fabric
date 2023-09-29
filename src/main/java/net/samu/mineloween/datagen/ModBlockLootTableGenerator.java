@@ -33,6 +33,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ASH_WOOD_FENCE_GATE);
         addDrop(ModBlocks.ASH_SAPLING);
         addDrop(ModBlocks.ASH_LEAVES, leavesDrops(ModBlocks.ASH_LEAVES, ModBlocks.ASH_SAPLING, 0.05f));
+        addDrop(ModBlocks.AUTUMNAL_ASH_LEAVES, leavesDrops(ModBlocks.AUTUMNAL_ASH_LEAVES, ModBlocks.ASH_SAPLING, 0.05f));
         addDrop(ModBlocks.LAVANDA);
         addDrop(ModBlocks.MALVA_FLOWER, drops(ModItems.MALVA_SEEDS));
 

@@ -21,6 +21,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> ASH_2_FOREST_PLACED_KEY = registerKey("ash_2_forest_placed");
     public static final RegistryKey<PlacedFeature> ASH_1_ASH_FOREST_PLACED_KEY = registerKey("ash_1_ash_forest_placed");
     public static final RegistryKey<PlacedFeature> ASH_2_ASH_FOREST_PLACED_KEY = registerKey("ash_2_ash_forest_placed");
+    public static final RegistryKey<PlacedFeature> AUTUMNAL_ASH_1_AUTUMNAL_FOREST_PLACED_KEY = registerKey("autumnal_ash_1_autumnal_forest_placed");
+    public static final RegistryKey<PlacedFeature> AUTUMNAL_ASH_2_AUTUMNAL_FOREST_PLACED_KEY = registerKey("autumnal_ash_2_autumnal_forest_placed");
     public static final RegistryKey<PlacedFeature> DEAD_OAK_TREE_1_PLACED_KEY = registerKey("dead_oak_tree_1_placed");
     public static final RegistryKey<PlacedFeature> DEAD_OAK_TREE_2_PLACED_KEY = registerKey("dead_oak_tree_2_placed");
     public static final RegistryKey<PlacedFeature> DEAD_DARK_OAK_TREE_1_PLACED_KEY = registerKey("dead_dark_oak_tree_1_placed");
@@ -55,7 +57,7 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.1f, 2), ModBlocks.ASH_SAPLING));
 
-        // ----- Ash Forest
+        // ----- Ash Forest -----
         register(context, ASH_1_ASH_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ASH_KEY_1),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(6, 0.5f, 4), ModBlocks.ASH_SAPLING));
@@ -64,7 +66,16 @@ public class ModPlacedFeatures {
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(6, 0.5f, 4), ModBlocks.ASH_SAPLING));
 
-        // ----- Dead Forest
+        // ----- Autumnal Forest -----
+        register(context, AUTUMNAL_ASH_1_AUTUMNAL_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.AUTUMNAL_ASH_KEY_1),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(2, 0.2f, 1), ModBlocks.ASH_SAPLING));
+
+        register(context, AUTUMNAL_ASH_2_AUTUMNAL_FOREST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.AUTUMNAL_ASH_KEY_2),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(2, 0.2f, 1), ModBlocks.ASH_SAPLING));
+
+        // ----- Dead Forest -----
         register(context, DEAD_OAK_TREE_1_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.DEAD_OAK_TREE_KEY_1),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(5, 0.1f, 1), Blocks.OAK_SAPLING));

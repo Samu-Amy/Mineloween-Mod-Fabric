@@ -9,7 +9,6 @@ import net.minecraft.block.ComposterBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
-import net.minecraft.village.VillagerProfession;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.entity.ModEntities;
 import net.samu.mineloween.entity.custom.GhostEntity;
@@ -31,7 +30,7 @@ public class ModRegistries {
     public static void registerFuels() {
         FuelRegistry registry = FuelRegistry.INSTANCE;
 
-        registry.add(ModItems.LEAF, 50);
+        registry.add(ModItems.LEAVES, 50);
     }
 
     private static void registerAttributes() {
@@ -58,6 +57,7 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_ASH_WOOD, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.AUTUMNAL_ASH_LEAVES, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_WOOD_STAIRS, 5, 18);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_WOOD_SLAB, 5, 10);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASH_WOOD_FENCE_GATE, 5, 15);

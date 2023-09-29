@@ -11,6 +11,7 @@ public class AshSaplingGenerator extends SaplingGenerator {
     @Nullable
     @Override
     protected RegistryKey<ConfiguredFeature<?, ?>> getTreeFeature(Random random, boolean bees) {
+        // TODO: aggiungi Autumn Ash Sapling
         if (random.nextBoolean()) {
             return ModConfiguredFeatures.ASH_KEY_1;
         } else {

@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.world.biome.BiomeKeys;
 import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.*;
 import net.samu.mineloween.world.ModPlacedFeatures;
 import net.samu.mineloween.world.biome.ModBiomes;
 
@@ -28,6 +29,13 @@ public class ModTreeGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.ASH_FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ASH_2_ASH_FOREST_PLACED_KEY);
+
+        // ----- AUTUMN FOREST -----
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.AUTUMN_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AUTUMNAL_ASH_1_AUTUMNAL_FOREST_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.AUTUMN_FOREST),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.AUTUMNAL_ASH_2_AUTUMNAL_FOREST_PLACED_KEY);
 
         // ----- DEAD FOREST -----
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.DEAD_FOREST),

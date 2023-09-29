@@ -20,13 +20,16 @@ public class ModMaterialRules {
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.ASH_FOREST),
                                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)),
 
+                MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.AUTUMN_FOREST),
+                                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)),
+
                 MaterialRules.sequence(MaterialRules.condition(MaterialRules.biome(ModBiomes.DEAD_FOREST),
                                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, coarseDirtSurface)),
 
 
                 // Default to a grass and dirt surface
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, grassSurface)))
-                );
+                ));
     }
 
     private static MaterialRules.MaterialRule makeStateRule(Block block) {

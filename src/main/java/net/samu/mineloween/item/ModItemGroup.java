@@ -23,6 +23,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.ASH_WOOD_SLAB);
                         entries.add(ModBlocks.ASH_WOOD_FENCE_GATE);
                         entries.add(ModBlocks.ASH_LEAVES);
+                        entries.add(ModBlocks.AUTUMNAL_ASH_LEAVES);
                         entries.add(ModBlocks.ASH_SAPLING);
 
                         entries.add(ModBlocks.GEM_ORE);
@@ -60,7 +61,7 @@ public class ModItemGroup {
 
                         entries.add(ModItems.CHOCOLATE);
 
-                        entries.add(ModItems.LEAF);
+                        entries.add(ModItems.LEAVES);
                         entries.add(ModItems.RESIN);
                         entries.add(ModItems.MALVA_SEEDS);
                         entries.add(ModItems.MALVA_FLOWERS);
