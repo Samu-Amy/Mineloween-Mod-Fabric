@@ -10,6 +10,8 @@ import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
 import net.samu.mineloween.block.ModBlocks;
 import net.samu.mineloween.entity.ModEntities;
+import net.samu.mineloween.item.custom.BandageItem;
+import net.samu.mineloween.item.custom.HealingBandageItem;
 import net.samu.mineloween.item.custom.ModScytheItem;
 
 public class ModItems {
@@ -55,13 +57,22 @@ public class ModItems {
 
     // -------- Nature --------
     public static final Item LEAF = registerItem("leaf", new Item(new FabricItemSettings()));
+    public static final Item RESIN = registerItem("resin", new Item(new FabricItemSettings()));
     public static final Item MALVA_SEEDS = registerItem("malva_seeds", new AliasedBlockItem(ModBlocks.MALVA_CROP, new FabricItemSettings()));
     public static final Item MALVA_FLOWERS = registerItem("malva_flowers", new Item(new FabricItemSettings()));
 
 
+    // -------- HERBORISM --------
+    public static final Item DRIED_ASH_LEAVES = registerItem("dried_ash_leaves", new Item(new FabricItemSettings()));
+    public static final Item MALVA_POWDER = registerItem("malva_powder", new Item(new FabricItemSettings()));
+    public static final Item MEDICINAL_PASTE = registerItem("medicinal_paste", new Item(new FabricItemSettings()));
+    public static final Item HEALING_MEDICINAL_PASTE = registerItem("healing_medicinal_paste", new Item(new FabricItemSettings()));
+
+
     // -------- Items --------
-    public static final Item BANDAGE = registerItem("bandage", new Item(new FabricItemSettings()));
-    public static final Item HEALING_BANDAGE = registerItem("healing_bandage", new Item(new FabricItemSettings()));
+    public static final Item FABRIC = registerItem("fabric", new Item(new FabricItemSettings()));
+    public static final Item BANDAGE = registerItem("bandage", new BandageItem(new FabricItemSettings().maxDamage(1)));
+    public static final Item HEALING_BANDAGE = registerItem("healing_bandage", new HealingBandageItem(new FabricItemSettings().maxDamage(1)));
 
 
     // -------- Mobs --------

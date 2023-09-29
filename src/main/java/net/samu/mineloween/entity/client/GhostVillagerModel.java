@@ -45,7 +45,7 @@ public class GhostVillagerModel<T extends GhostVillagerEntity> extends SinglePar
 
     private void setHeadAngles(GhostVillagerEntity entity, float headYaw, float headPitch, float animationProgress) {
         headYaw = MathHelper.clamp(headYaw, -50.0f, 50.0f);
-        headPitch = MathHelper.clamp(headPitch, 30, 30.0f);
+        headPitch = MathHelper.clamp(headPitch, -30, 30.0f);
 
         this.head.yaw = headYaw * 0.017453292f;
         this.head.pitch = headPitch * 0.017453292f;

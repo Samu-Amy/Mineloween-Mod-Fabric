@@ -73,19 +73,68 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.GOLD_POWDER), conditionsFromItem(ModItems.GOLD_POWDER))
                 .offerTo(exporter, new Identifier("gold_nugget_from_gold_powder"));
 
+
+        // -------- Herborism --------
+        offerSmelting(exporter, List.of(ModBlocks.ASH_LEAVES), RecipeCategory.MISC, ModItems.DRIED_ASH_LEAVES, 0.2f, 50, "ash");
+
+        //TODO: polvere di Malva con fiori essiccati (?) e messi in mortaio e pestello
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MALVA_POWDER)
+                .input(ModItems.MALVA_FLOWERS)
+                .criterion(hasItem(ModItems.MALVA_FLOWERS), conditionsFromItem(ModItems.MALVA_FLOWERS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MALVA_POWDER)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.FABRIC, 4)
+                .pattern("SSS")
+                .pattern("SSS")
+                .input('S', Items.STRING)
+                .criterion(hasItem(Items.STRING), conditionsFromItem(Items.STRING))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.FABRIC)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MEDICINAL_PASTE, 2)
+                .pattern("MLM")
+                .pattern("DRD")
+                .pattern("MLM")
+                .input('L', ModBlocks.LAVANDA)
+                .input('M', ModItems.MALVA_FLOWERS)
+                .input('D', ModItems.DRIED_ASH_LEAVES)
+                .input('R', ModItems.RESIN)
+                .criterion(hasItem(ModBlocks.LAVANDA), conditionsFromItem(ModBlocks.LAVANDA))
+                .criterion(hasItem(ModItems.MALVA_FLOWERS), conditionsFromItem(ModItems.MALVA_FLOWERS))
+                .criterion(hasItem(ModItems.DRIED_ASH_LEAVES), conditionsFromItem(ModItems.DRIED_ASH_LEAVES))
+                .criterion(hasItem(ModItems.RESIN), conditionsFromItem(ModItems.RESIN))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MEDICINAL_PASTE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HEALING_MEDICINAL_PASTE, 2)
+                .pattern("MLM")
+                .pattern("DRD")
+                .pattern("MLM")
+                .input('L', ModBlocks.LAVANDA)
+                .input('M', ModItems.MALVA_POWDER)
+                .input('D', ModItems.DRIED_ASH_LEAVES)
+                .input('R', ModItems.RESIN)
+                .criterion(hasItem(ModBlocks.LAVANDA), conditionsFromItem(ModBlocks.LAVANDA))
+                .criterion(hasItem(ModItems.MALVA_POWDER), conditionsFromItem(ModItems.MALVA_POWDER))
+                .criterion(hasItem(ModItems.DRIED_ASH_LEAVES), conditionsFromItem(ModItems.DRIED_ASH_LEAVES))
+                .criterion(hasItem(ModItems.RESIN), conditionsFromItem(ModItems.RESIN))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALING_MEDICINAL_PASTE)));
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BANDAGE, 2)
                 .pattern("MMM")
-                .input('M', ModItems.MALVA_FLOWERS)
-                .criterion(hasItem(ModItems.MALVA_FLOWERS), conditionsFromItem(ModItems.MALVA_FLOWERS))
+                .pattern("FFF")
+                .input('M', ModItems.MEDICINAL_PASTE)
+                .input('F', ModItems.FABRIC)
+                .criterion(hasItem(ModItems.MEDICINAL_PASTE), conditionsFromItem(ModItems.MEDICINAL_PASTE))
+                .criterion(hasItem(ModItems.FABRIC), conditionsFromItem(ModItems.FABRIC))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.BANDAGE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HEALING_BANDAGE, 2) //TODO: sostituisci Ash leaves con Ash leaves essiccate e resina?
-                .pattern("LLL")
-                .pattern("MMM")
-                .input('L', ModBlocks.ASH_LEAVES)
-                .input('M', ModItems.MALVA_FLOWERS)
-                .criterion(hasItem(ModBlocks.ASH_LEAVES), conditionsFromItem(ModBlocks.ASH_LEAVES))
-                .criterion(hasItem(ModItems.MALVA_FLOWERS), conditionsFromItem(ModItems.MALVA_FLOWERS))
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HEALING_BANDAGE, 2) //TODO: sostituisci Ash leaves con Ash leaves essiccate
+                .pattern("HHH")
+                .pattern("FFF")
+                .input('H', ModItems.HEALING_MEDICINAL_PASTE)
+                .input('F', ModItems.FABRIC)
+                .criterion(hasItem(ModItems.HEALING_MEDICINAL_PASTE), conditionsFromItem(ModItems.HEALING_MEDICINAL_PASTE))
+                .criterion(hasItem(ModItems.FABRIC), conditionsFromItem(ModItems.FABRIC))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.HEALING_BANDAGE)));
 
 

@@ -26,11 +26,18 @@
   "item.mineloween.chocolate": "Chocolate",
 
   "item.mineloween.leaf": "Leaf",
+  "item.mineloween.resin": "Resin",
   "item.mineloween.malva_seeds": "Malva Seeds",
   "item.mineloween.malva_flowers": "Malva Flowers",
   "block.mineloween.malva_flower": "Malva Flower",
   "block.mineloween.lavanda": "Lavandula",
 
+  "item.mineloween.dried_ash_leaves": "Dried Ash Leaves",
+  "item.mineloween.malva_powder": "Malva Powder",
+  "item.mineloween.medicinal_paste": "Medicinal Paste",
+  "item.mineloween.healing_medicinal_paste": "Healing Medicinal Paste",
+
+  "item.mineloween.fabric": "Fabric",
   "item.mineloween.bandage": "Bandage",
   "item.mineloween.healing_bandage": "Healing Bandage",
 

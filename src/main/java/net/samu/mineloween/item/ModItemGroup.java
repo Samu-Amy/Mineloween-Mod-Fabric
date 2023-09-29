@@ -61,10 +61,17 @@ public class ModItemGroup {
                         entries.add(ModItems.CHOCOLATE);
 
                         entries.add(ModItems.LEAF);
+                        entries.add(ModItems.RESIN);
                         entries.add(ModItems.MALVA_SEEDS);
                         entries.add(ModItems.MALVA_FLOWERS);
                         entries.add(ModBlocks.LAVANDA);
 
+                        entries.add(ModItems.DRIED_ASH_LEAVES);
+                        entries.add(ModItems.MALVA_POWDER);
+                        entries.add(ModItems.MEDICINAL_PASTE);
+                        entries.add(ModItems.HEALING_MEDICINAL_PASTE);
+
+                        entries.add(ModItems.FABRIC);
                         entries.add(ModItems.BANDAGE);
                         entries.add(ModItems.HEALING_BANDAGE);
 
