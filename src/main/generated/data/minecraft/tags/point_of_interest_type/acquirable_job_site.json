@@ -2,11 +2,11 @@
   "replace": false,
   "values": [
     {
-      "id": "mineloween:herborismpoi",
+      "id": "mineloween:gemworkerpoi",
       "required": false
     },
     {
-      "id": "mineloween:gemworkerpoi",
+      "id": "mineloween:herborismpoi",
       "required": false
     }
   ]

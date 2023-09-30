@@ -223,85 +223,181 @@ public class ModRegistries {
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
                     factories.add((entity, random) -> new TradeOffer(
                             new ItemStack(Items.EMERALD, 1),
-                            new ItemStack(ModBlocks.LAVANDA, 3), 10, 4, 0.02f));
+                            new ItemStack(ModBlocks.LAVANDA, 3), 10, 2, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(ModBlocks.LAVANDA, 3), 10, 4, 0.02f));
+                    new ItemStack(ModBlocks.LAVANDA, 3), 10, 2, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 3, 0.02f));
+                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 2, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 3, 0.02f));
+                    new ItemStack(ModItems.MALVA_FLOWERS, 2), 10, 2, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.EMERALD, 2),
-                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 6, 0.04f));
+                    new ItemStack(ModItems.RESIN, 3), 8, 3, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 6),
+                    new ItemStack(ModItems.RESIN, 3), 8, 3, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 4, 0.06f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 6),
+                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 4, 0.06f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(Items.STRING, 8), 8, 4, 0.04f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 2, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(ModItems.MALVA_SEEDS, 3), 8, 6, 0.04f));
+                    new ItemStack(Items.STRING, 8), 8, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 3, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 1),
+                    new ItemStack(ModItems.FABRIC, 4), 8, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 3, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 3),
+                    new ItemStack(ModItems.FABRIC, 4), 8, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 4, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 2),
+                    new ItemStack(ModItems.MEDICINAL_PASTE, 2), 6, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 4, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 6),
+                    new ItemStack(ModItems.MEDICINAL_PASTE, 2), 6, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 4, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 4),
+                    new ItemStack(ModItems.HEALING_MEDICINAL_PASTE, 2), 6, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 4, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 12),
+                    new ItemStack(ModItems.HEALING_MEDICINAL_PASTE, 2), 6, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 5, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 5),
+                    new ItemStack(ModItems.BANDAGE, 1), 5, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 5, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 15),
+                    new ItemStack(ModItems.BANDAGE, 1), 5, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 5, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 7),
+                    new ItemStack(ModItems.HEALING_BANDAGE, 1), 5, 4, 0.04f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.HERBORIST, 5, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 21),
+                    new ItemStack(ModItems.HEALING_BANDAGE, 1), 5, 4, 0.04f));
         });
 
         // ----- GEM WORKER -----
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.GOLD_POWDER, 14),
-                    new ItemStack(Items.EMERALD, 1), 50, 2, 0.01f));
+                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(Items.EMERALD, 1), 50, 2, 0.01f));
+                    new ItemStack(Items.EMERALD, 1), 50, 1, 0.01f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.GOLD_POWDER, 16),
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModItems.GOLD_COIN, 4), 20, 3, 0.02f));
+                    new ItemStack(ModItems.GOLD_COIN, 4), 20, 2, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.RAW_GEM, 2),
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModItems.GEM_POWDER, 4), 10, 4, 0.02f));
+                    new ItemStack(ModItems.GEM_POWDER, 4), 10, 3, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(ModItems.RAW_GEM, 2),
                     new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(ModItems.GEM_POWDER, 4), 10, 4, 0.02f));
+                    new ItemStack(ModItems.GEM_POWDER, 4), 10, 3, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.GOLD_INGOT, 2),
                     new ItemStack(Items.EMERALD, 1),
-                    new ItemStack(ModItems.GOLD_POWDER, 4), 10, 4, 0.02f));
+                    new ItemStack(ModItems.GOLD_POWDER, 4), 10, 3, 0.02f));
         });
 
         TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 1, factories -> {
             factories.add((entity, random) -> new TradeOffer(
                     new ItemStack(Items.GOLD_INGOT, 2),
                     new ItemStack(ModItems.GOLD_COIN, 3),
-                    new ItemStack(ModItems.GOLD_POWDER, 4), 10, 4, 0.02f));
+                    new ItemStack(ModItems.GOLD_POWDER, 4), 10, 3, 0.02f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 3, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.GOLD_COIN, 24),
+                    new ItemStack(ModBlocks.GEMSTONE_GRINDER, 1), 2, 8, 0.1f));
+        });
+
+        TradeOfferHelper.registerVillagerOffers(ModVillagers.GEM_WORKER, 3, factories -> {
+            factories.add((entity, random) -> new TradeOffer(
+                    new ItemStack(Items.EMERALD, 8),
+                    new ItemStack(ModBlocks.GEMSTONE_GRINDER, 1), 2, 8, 0.1f));
         });
     }
 }

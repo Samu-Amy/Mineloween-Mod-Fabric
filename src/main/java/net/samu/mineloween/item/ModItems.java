@@ -71,8 +71,8 @@ public class ModItems {
 
     // -------- Items --------
     public static final Item FABRIC = registerItem("fabric", new Item(new FabricItemSettings()));
-    public static final Item BANDAGE = registerItem("bandage", new BandageItem(new FabricItemSettings().maxDamage(1)));
-    public static final Item HEALING_BANDAGE = registerItem("healing_bandage", new HealingBandageItem(new FabricItemSettings().maxDamage(1)));
+    public static final Item BANDAGE = registerItem("bandage", new BandageItem(new FabricItemSettings().maxCount(16).maxDamage(1)));
+    public static final Item HEALING_BANDAGE = registerItem("healing_bandage", new HealingBandageItem(new FabricItemSettings().maxCount(16).maxDamage(1)));
 
 
     // -------- Mobs --------
