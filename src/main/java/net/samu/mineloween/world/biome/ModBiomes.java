@@ -146,8 +146,8 @@ public class ModBiomes {
 
         return new Biome.Builder()
                 .precipitation(true)
-                .downfall(0.4f)
-                .temperature(0.7f)
+                .downfall(0.5f)
+                .temperature(0.5f)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
