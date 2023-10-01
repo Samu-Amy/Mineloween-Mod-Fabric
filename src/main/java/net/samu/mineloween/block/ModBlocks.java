@@ -10,6 +10,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.samu.mineloween.MineloweenMod;
+import net.samu.mineloween.block.custom.AutumnalAshLeaves;
 import net.samu.mineloween.block.custom.DecorativeBookshelfBlock;
 import net.samu.mineloween.block.custom.GemstoneGrinderBlock;
 import net.samu.mineloween.block.custom.MalvaCropBlock;
@@ -37,7 +38,7 @@ public class ModBlocks {
     public static final Block STRIPPED_ASH_WOOD = registerBlock("stripped_ash_wood", new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block ASH_PLANKS = registerBlock("ash_planks", new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block ASH_LEAVES = registerBlock("ash_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
-    public static final Block AUTUMNAL_ASH_LEAVES = registerBlock("autumnal_ash_leaves", new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
+    public static final Block AUTUMNAL_ASH_LEAVES = registerBlock("autumnal_ash_leaves", new AutumnalAshLeaves(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block ASH_SAPLING = registerBlock("ash_sapling", new SaplingBlock(new AshSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
     public static final Block ASH_WOOD_STAIRS = registerBlock("ash_wood_stairs", new StairsBlock(ModBlocks.ASH_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));
     public static final Block ASH_WOOD_SLAB = registerBlock("ash_wood_slab", new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));

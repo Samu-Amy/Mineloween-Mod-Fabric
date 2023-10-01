@@ -1,7 +1,7 @@
-// 1.20.1	2023-09-30T19:14:55.3508801	Mineloween Mod/Tags for minecraft:item
+// 1.20.1	2023-10-01T18:44:00.8656416	Mineloween Mod/Tags for minecraft:item
 88474be33ee100a9f1934420f052454ee876d2d4 data\minecraft\tags\items\logs_that_burn.json
-e6e1397de80a69efd9630ddd3369ca0019369ca7 data\minecraft\tags\items\wooden_stairs.json
 f4b9b33b01334e1fd515b3bf024cbd71a7ad832e data\minecraft\tags\items\planks.json
+e6e1397de80a69efd9630ddd3369ca0019369ca7 data\minecraft\tags\items\wooden_stairs.json
 e63328b62dc971734986ad06faa3d7440fbc046d data\minecraft\tags\items\trimmable_armor.json
 58dd8ba3675a58e3034dafe858eae55332b08058 data\minecraft\tags\items\wooden_slabs.json
 b672f7037a4db7801e185806a93ce971b845b480 data\minecraft\tags\items\leaves.json

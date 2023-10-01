@@ -7,6 +7,7 @@ import net.samu.mineloween.block.entity.ModBlockEntities;
 import net.samu.mineloween.entity.ModEntities;
 import net.samu.mineloween.item.ModItemGroup;
 import net.samu.mineloween.item.ModItems;
+import net.samu.mineloween.particle.ModParticles;
 import net.samu.mineloween.recipe.ModRecipes;
 import net.samu.mineloween.screen.ModScreenHandlers;
 import net.samu.mineloween.util.ModRegistries;
@@ -26,6 +27,7 @@ public class MineloweenMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModRegistries.registerModStuff();
+		ModParticles.registerParticles();
 
 		ModVillagers.registerVillagers();
 
